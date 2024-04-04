@@ -28,6 +28,8 @@ public class BufferReader1 {
 		//close the scanners
 		fr.close();
 		brr.close();
+		
 	}
+	
 
 }
