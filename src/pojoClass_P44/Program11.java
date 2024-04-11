@@ -22,7 +22,7 @@ public class Program11 {
 		Employee e1 = new Employee();
 		e1.setId(131);
 		e1.name =  "Abda";
-		e1.salary = 2341;
+		e1.salary = 3341;
 		
 		Employee e2 = new Employee();
 		e2.setId(143);
@@ -36,6 +36,11 @@ public class Program11 {
 		
 		//print using the array
 		Employee[] employee = new Employee[] {e1, e2, e3};
+		//this will only print salary's using the for loop 
+		for(int i = 0; i<employee.length; i++) {
+			//we want to print .salary for all 
+			System.out.println("Salary is " + employee[i].salary);
+		}
 	}
 	
 }
