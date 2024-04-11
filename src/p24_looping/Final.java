@@ -10,6 +10,12 @@ public class Final {
 				System.out.println("the number is " + i);
 			}
 		}
+		
+		for(int j = 0;  j<500; j++) {
+			if(j%5 ==0) {
+				System.out.println(j);
+			}
+		}
 	
 	}
 
