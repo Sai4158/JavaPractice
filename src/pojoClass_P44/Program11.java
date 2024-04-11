@@ -5,12 +5,13 @@ public class Program11 {
 		
 		//create a object and print them out with
 		Employee e = new Employee();
+		//set them using the set id
 		e.setId(101);
 		e.name =  "Sai";
 		e.salary = 4158;
 		
 		//then print them out 
-		//get 
+		//by using the get id 
 		System.out.println(e.getId());
 		System.out.println(e.name);
 		System.out.println(e.salary);
@@ -18,7 +19,8 @@ public class Program11 {
 		
 		
 		//or
-		//this is how you use printing 
+		//this is how you use printing with arrays
+		//when you have multiple Employees
 		Employee e1 = new Employee();
 		e1.setId(131);
 		e1.name =  "Abda";
