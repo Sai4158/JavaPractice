@@ -7,6 +7,8 @@ public interface laptop {
 	
 	public  void paste();
 	
+	public void sub();
+	
 	public  void cut();
 	
 	public  void keyboard();
@@ -24,4 +26,6 @@ public interface laptop {
 	private static void sound(){
 		System.out.println("good audio");
 	}
+	
+	
 }

@@ -25,5 +25,10 @@ public class Apple implements laptop {
 		System.out.println("Apple keyboard code");
 		
 	}
+	
+	@Override
+	public void sub() {
+		System.out.println("Apple sub");
+	}
 
 }

@@ -10,6 +10,7 @@ public class User {
 		lenovo.paste();
 		lenovo.camera();
 		lenovo.security();
+	
 		
 		
 		System.out.println();
@@ -17,8 +18,12 @@ public class User {
 		//code from hp file 
 		HP hp = new HP();
 		hp.printing();
+		hp.sub();
 		
 		System.out.println();
+		
+		Apple apple = new Apple();
+		apple.sub();
 		
 		//static 
 		laptop.audio();

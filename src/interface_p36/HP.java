@@ -29,7 +29,11 @@ public class HP implements laptop {
 	public void printing() {
 		System.out.println("HP printing code");
 	}
-		
+	
+	@Override	
+	public void sub() {
+		System.out.println("Hp sub");
+	}
 		
 }
 

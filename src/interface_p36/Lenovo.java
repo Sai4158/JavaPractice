@@ -34,4 +34,12 @@ public class Lenovo implements laptop{
 	public void security() {
 			System.out.println("Please implent1 ");
 	}
+	
+	
+	
+
+	public void sub() {
+		System.out.println("Lenvo sub");
+		
+	}
 }
