@@ -36,10 +36,15 @@ public class ALPrac {
 		v2.add("v2222");
 		v2.add("v22222");
 		
-		//this will print it 5 times using the for loop
-		for (int i = 0; i < 5; i++) {
-			System.out.println(v2);
+		//this will add v1 to v2
+		//will combine both vector arrays using size()
+		//add v1.add(v2.get(i))
+		for(int i = 0; i<v2.size(); i++) {
+			v1.add(v2.get(i));
 		}
+		//print the for loop combined 
+		System.out.println(v1);
+		
 		
 		System.out.println("\n"+"size: "+v1.size());
 		System.out.println("capacity: "+v1.capacity());
