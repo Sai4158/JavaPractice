@@ -42,12 +42,41 @@ public class ALPrac {
 		for(int i = 0; i<v2.size(); i++) {
 			v1.add(v2.get(i));
 		}
+		
+		//this is best to way to add 
+		v1.addAll(v2);
+		
+		
+		//this will remove all added values from the
+		v1.removeAll(v2);
+		
+		
 		//print the for loop combined 
 		System.out.println(v1);
 		
+		//this will get the index at v1
+		//using the get method
+		System.out.println(v1.get(5));
 		
+		//this is how you remove from index 
+		v1.remove(0);
+		
+	
+		//this will print the .size and .capacity
+		//\n for new line
 		System.out.println("\n"+"size: "+v1.size());
 		System.out.println("capacity: "+v1.capacity());
+		
+		
+		
+		
+		// check if it has or no using the boolean value 
+		System.out.println(v1.contains("raj"));
+		
+		
+		//delete everything nothing will be shown 
+		v1.clear();
+		System.out.println(v1);
 	}
 
 }
