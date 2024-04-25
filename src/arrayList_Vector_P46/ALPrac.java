@@ -71,7 +71,7 @@ public class ALPrac {
 		
 		
 		// check if it has or no using the boolean value 
-		System.out.println(v1.contains("raj"));
+		System.out.println(v1.contains(v2));
 		
 		
 		//delete everything nothing will be shown 
