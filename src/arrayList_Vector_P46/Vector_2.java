@@ -18,7 +18,6 @@ public class Vector_2 {
 		System.out.println(v1.capacity());
 		
 		//print from a Arrays using As list
-		Object[] arr = {2,32,4,24};
 		Vector v2 =  new Vector(Arrays.asList(arr));
 		System.out.println(v2.capacity());
 		System.out.println(v2);
