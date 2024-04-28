@@ -26,6 +26,7 @@ public class Arraylist {
 		String[] str= {"3242","32423","4535"};
 		Vector<String> v2 = new Vector<String>(Arrays.asList(str));
 		System.out.println(v2);
+		System.out.println(v2.firstElement() + "" + v2.lastElement());
 			
 	}
 }
