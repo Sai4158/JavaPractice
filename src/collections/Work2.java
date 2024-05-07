@@ -12,6 +12,7 @@ public class Work2 {
 		Integer arr[] = {234,3,23,23,30,34,22,10, 10};
 		Vector<Integer> v1 = new Vector<Integer>(Arrays.asList(arr));
 		
+		//this will add the even numbers
 		int sum = 0;
 		for (int num : arr) {
 			if(num % 2 == 0) {
@@ -20,13 +21,5 @@ public class Work2 {
 		}
 		System.out.print(sum);
 		
-//		//this will add the even numbers
-//		int sum = 0;
-//		for (int num : arr) {
-//			if(num % 2 == 0) {
-//				 sum += num;
-//			}
-//		}
-//		System.out.println(sum);
 	}
 }
