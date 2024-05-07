@@ -14,7 +14,7 @@ public class Work2 {
 		
 		//this will add the even numbers
 		int sum = 0;
-		for (int num : arr) {
+		for (int num : v1) {
 			if(num % 2 == 0) {
 				sum += num;
 			}	
