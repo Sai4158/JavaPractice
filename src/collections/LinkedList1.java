@@ -2,6 +2,7 @@ package collections;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedList1 {
 	public static void main(String[] args) {
@@ -31,6 +32,13 @@ public class LinkedList1 {
 		}
 		//make sure to print it out of the loop
 		System.out.print(sum);
+		System.out.println();
 
+		//this will print from index 0 to 3
+		//print 0,1,2
+		//{23,23,323,234,342,543};
+		//trim from index to index 
+		List<Integer> list1 = l1.subList(0, 3);
+		System.out.println(list1);
 	}
 }
