@@ -39,6 +39,15 @@ public class M1 {
 		for(Integer i : keys1) {
 			System.out.println(i + " >>>> " + m.get(i));
 		}
+		
+		//this is how to delete 
+		m.remove(102);
+		System.out.println(m);
+		
+		//check if it contains 
+		System.out.println(m.containsKey(102));
+		System.out.println(m.containsValue("hyd"));
+
 	}
 }
 
