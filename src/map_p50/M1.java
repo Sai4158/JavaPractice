@@ -47,7 +47,18 @@ public class M1 {
 		//check if it contains 
 		System.out.println(m.containsKey(102));
 		System.out.println(m.containsValue("hyd"));
-
+		
+		//Replace
+		System.out.println(m);
+		m.replace(101, "Hyderbad");
+		System.out.println(m);
+		
+		//Will print map size
+		System.out.println(m.size());
+		
+		//will clear the list 
+		m.clear();
+		System.out.println(m);
 	}
 }
 
