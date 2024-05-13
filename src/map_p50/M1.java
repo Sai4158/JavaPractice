@@ -27,6 +27,18 @@ public class M1 {
 		for(Integer i : keys) {
 			System.out.println(i);
 		}
+		
+		//this will print all the keys in array format
+		System.out.println(m);
+		
+		//this will print by the key 
+		System.out.println(m.get(101));
+		
+		//this will print both key and pair 
+		Set<Integer> keys1 = m.keySet();
+		for(Integer i : keys1) {
+			System.out.println(i + " >>>> " + m.get(i));
+		}
 	}
 }
 
