@@ -5,12 +5,29 @@ public class M1 {
 	public static void main(String[] args) {
 
 		//this is how to create a map
-		Map <Integer, String> m = new Hashtable<>();
-
-		//add them first
+		//or u can uuse hashmap
+		Map <Integer, String> m = new HashMap<>();
+		Map<String, Integer> m1 =  new HashMap<>();
+		
+		//add them first to m 
 		m.put(101, "hyd");
 		m.put(102, "dhl");
 		m.put(103, "TS");
+		
+		//add to m1
+		m1.put("hi", 1);
+		m1.put("hello", 2);
+		m1.put("wassup", 3);
+		
+		//print out m1
+		System.out.println(m1);
+		
+		//printing out m2
+		Set<String> keys11 = m1.keySet();
+		for(String i : keys11) {
+			System.out.println(i + " >>>> " + m1.get(i));
+		}
+	
 
 		//this will print the pair
 		//using.values()
