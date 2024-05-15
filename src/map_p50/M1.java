@@ -1,4 +1,5 @@
 package map_p50;
+import java.io.ObjectInputStream.GetField;
 import java.util.*;
 
 public class M1 {
@@ -23,11 +24,16 @@ public class M1 {
 		System.out.println(m1);
 		
 		//printing out m2
-		Set<String> keys11 = m1.keySet();
-		for(String i : keys11) {
-			System.out.println(i + " >>>> " + m1.get(i));
+		Set<String> s1 = m1.keySet();
+		for(String s : s1) {
+			System.out.println(s + m1.get(s));
 		}
 	
+		//printing out m2
+				Set<String> s11 = m1.keySet();
+				for(String s : s11) {
+					System.out.println(s + ">>>>>>>" +  m1.get(s));
+				}
 
 		//this will print the pair
 		//using.values()
