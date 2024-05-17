@@ -1,15 +1,36 @@
 package queue_p51;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
 import javax.sound.sampled.ReverbType;
 
+import arrayCreation.Array;
+
 public class Qpractice {
 	public static void main(String[] args) {
+		//Array of numbers 
+		Integer num[] = {3,4,54,76,2,5,654};
+		
 		//priority queue
 		PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+		PriorityQueue<Integer> pq1 = new PriorityQueue<Integer>(Arrays.asList(num));
 		
+		
+		//this will print the pq1
+		//this will print based on the priority
+		System.out.println(pq1);
+		
+		System.out.println();
+		
+		//this will print using while loop
+		while(!pq1.isEmpty()) {
+			System.out.print(pq1.poll() + ",");
+		}
+
+		System.out.println();
+				
 		//to add - add, offer
 		//will be priority only for lowest int head 
 		pq.offer(932);
