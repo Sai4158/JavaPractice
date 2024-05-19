@@ -19,9 +19,14 @@ public class ArrayDeque1 {
 	
 	//offer will always add in the last
 	s1.offer("last00");
-
+	s1.offer("last01");
+	s1.offer("last02");
+	s1.offer("last03");
+	s1.offer("last04");
+	
 	//poll will remove the last element
 	//or u can use poll last
+	s1.poll();
 	s1.poll();
 	
 	//will remove the first element using pool
