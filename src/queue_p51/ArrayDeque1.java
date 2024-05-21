@@ -1,17 +1,29 @@
 package queue_p51;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayDeque1 {
 	public static void main(String[] args) {
 		
-		//this is how to create array Deque
-		
+	//this is how to create array Deque
 	ArrayDeque<String> s1 = new ArrayDeque<String>();
+	
+	Integer q1[] = {34,45,45,545};
+	ArrayList<Integer> Al1 =  new ArrayList<>(Arrays.asList(q1));
+	
+	System.out.println(Al1);
+	System.out.println("---------");
+	for (int i = 0; i < Al1.size(); i++) {
+		System.out.println(Al1);
+	}
+	
 	s1.add("Sai");
 	s1.add("nav");
 	s1.add("ssq");
 	s1.add("aef");
+	
 	//will add in the first
 	s1.addFirst("first");
 	//will add in the last

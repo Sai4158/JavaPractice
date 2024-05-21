@@ -7,6 +7,15 @@ public class ALPrac {
 		
 		//vector
 		Vector v1 = new Vector();
+		Vector v3 =  new Vector();
+		
+		
+		//add vector to v2
+		v3.add("audi");
+		v3.add("bmw");
+		
+		//printing out v2 using the for loop
+		System.out.println(v3);
 		
 		//add vectors 
 		v1.add("sai");
