@@ -31,6 +31,9 @@ public class Set_Practice {
 		//print the int out 
 		System.out.println(fgd);
 		
+		//using contains you can see if the data is included or not 
+		System.out.println(fgd.contains(76));
+
 		
 		//this will not allow any dupes 
 		//this will not print in insertion order
