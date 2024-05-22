@@ -6,7 +6,7 @@ import java.util.Set;
 public class Set_Practice {
 	public static void main(String[] args) {
 		
-		//HashSet -> HashMap -> Array of nodes(key,pair)
+		//HashSet -> HashMap -> Array of nodes (key,pair)
 		
 		//HashSet 
 		Set<String> hs = new HashSet<String>();
