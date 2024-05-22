@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Set_Practice {
 	public static void main(String[] args) {
-		
+		//no order = set
 		//HashSet -> HashMap -> Array of nodes (key,pair)
 		
 		//HashSet 
