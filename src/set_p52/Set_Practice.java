@@ -35,6 +35,13 @@ public class Set_Practice {
 		System.out.println(fgd.contains(76));
 
 		
+		//printing out using for each loop 
+		for(Integer elements:fgd) {
+			System.out.println(elements + ",");
+		}
+		
+		
+		
 		//this will not allow any dupes 
 		//this will not print in insertion order
 		//then print it out
