@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class LinkedHashSet1 {
 	public static void main(String[] args) {
-		
+		//insertion order = LinkedHashMap
 		//LinkedHashSet -> LinkedHashMap -> link of nodes (key,pair)
 		
 		//the difference is here it will print in insertion order

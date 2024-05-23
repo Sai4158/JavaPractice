@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 public class TreeSet1 {
 	public static void main(String[] args) {
-
+		//Sorted order = TreeSet
 		//TreeSet -> TreeMap -> binary tree
 		
 		//this will print in the sorted order from smallest to largest
