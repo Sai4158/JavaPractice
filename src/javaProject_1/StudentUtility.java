@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StudentUtility {
-	Scanner sc = new Scanner(System.in);
+	static Scanner sc = new Scanner(System.in);
 
 	//1 Add students 
 	
