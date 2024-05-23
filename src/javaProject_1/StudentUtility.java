@@ -6,8 +6,10 @@ public class StudentUtility {
 	
 	//1 Add students 
 	
+	//obj from the student class 
 	public static Student addStudent() {
 		Scanner sc = new Scanner(System.in);
+		Student s  = new Student();
 		
 		return null;
 	}

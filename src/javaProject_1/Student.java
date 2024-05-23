@@ -6,6 +6,11 @@ public class Student {
 	private String sname;
 	private int age;
 
+	//non parameter constructor
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	//constructor 
 	public Student(int sID, String sname, int age) {
