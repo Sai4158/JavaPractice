@@ -1,6 +1,7 @@
 package javaProject_1;
 
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,30 +36,7 @@ public class StudentTest {
 			case 2: {
 
 				//update Students 
-				public static Student updateStudent(List<Student> students) {
-					System.out.println("Please enter the updated deatails");
-					
-					System.out.println("Enter Sid: ");
-					int id = sc.nextInt();
-					System.out.println("Enter Sname: ");
-					int name = sc.nextInt();
-					System.out.println("Enter sAge: ");
-					int age = sc.nextInt();
-					
-					//done with the changes 
-					//for each 
-					int count = 0;
-					for(String s: studets) {
-						if(id == s.getId()) {
-							student.get(s);
-							break;
-						}
-						count++;
-					}
-					student.get(count).setSname(name);
-					student.get(count).setAge(age);
-					return null;
-				}
+				
 			}
 			case 3: {
 
