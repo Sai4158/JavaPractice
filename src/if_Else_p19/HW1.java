@@ -16,7 +16,7 @@ public class HW1 {
 		//% remider is divisble by 2 then even
 		
 		if(a%2 == 0) {
-			System.out.println("this is a even number");
+			System.out.println("this is a even numberr");
 		}
 		else {
 			System.out.println("This is a odd number");
