@@ -7,7 +7,10 @@ public class Main {
 		Pizza basePizza = new Pizza (false);
 		
 		//now the get the value
-		basePizza.getPizzaPrice();
+		basePizza.addExtraTopings();
+		
+		//now get the bill method -  where the final price is 
+		basePizza.getBill();
 		
 	}
 }
