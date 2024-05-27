@@ -4,7 +4,12 @@ public class Pizza {
 	private int price;
 	private Boolean veg;
 
+	//setting the price for each options
+	private int extraCheeseprice = 100;
+	private int addExtraTopingsprice = 150;
+	private int backPackprice = 20;
 
+	
 	public Pizza(Boolean veg) {
 
 		this.veg = veg;
@@ -18,10 +23,36 @@ public class Pizza {
 			this.price = 400;
 		}
 
-
 	}
-	//printing using a constructor
-	public void getPizzaPrice() {
+
+	
+	//methods 
+	
+	//extraCheese 
+	public void extraCheese() {
+		System.out.println("Extra chesse is added");
+		//adding extra to the price 
+		this.price += extraCheeseprice;
+	}
+	
+	//addExtraTopings 
+	public void addExtraTopings() {
+		System.out.println("Extra topping is added");
+
+		//adding extra to the price 
+		this.price += addExtraTopingsprice;
+	}
+
+	//takeAway 
+	public void takeAway() {
+		System.out.println("Take out opted");
+		this.price = backPackprice;
+	}
+
+
+	//getBill 
+	public void getBill() {
+		//will print the final price of the pizza
 		System.out.println(this.price);
 	}
 
