@@ -58,6 +58,7 @@ public class Pizza {
 
 	//getBill 
 	public void getBill() {
+		
 		String bill = "";
 		System.out.println("Pizza: " + baseprice );
 		if(isExtraCheeseAdded) {
@@ -67,11 +68,15 @@ public class Pizza {
 			bill += "extra toppings added: " + addExtraTopingsprice + "\n";		
 		}
 		if(isoptedForTakeAway) {
-			bill += "Take away: " + backPackprice + "\n";		
+			bill += "Take away: " + backPackprice + "\n";
+			
 		}
 		
 		bill += "bill: " + this.price + "\n";
+		
 		System.out.println(bill);
+		
 	}
+	
 
 }
