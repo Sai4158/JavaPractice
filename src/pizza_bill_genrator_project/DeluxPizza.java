@@ -7,6 +7,7 @@ public class DeluxPizza extends Pizza{
 		super(veg);
 		super.addExtraTopings();
 		super.extraCheese();
+		super.extraChicken();
 		
 	}
 
@@ -20,6 +21,12 @@ public class DeluxPizza extends Pizza{
 	public void addExtraTopings() {
 		// TODO Auto-generated method stub
 		super.addExtraTopings();
+	}
+	
+	@Override
+	public void extraChicken() {
+		// TODO Auto-generated method stub
+		super.extraChicken();
 	}
 	
 	

@@ -17,10 +17,19 @@ public class Main {
 //		basePizza.getBill();
 		
 		//getting them from a diffrent class and them printing them here
+		//Encapsulating
 		DeluxPizza dp = new DeluxPizza(true);
 		dp.extraCheese();
 		dp.addExtraTopings();
 		dp.getBill();
+		dp.extraChicken();
+		
+		
+//		Pizza: 300
+//		Extra cheese added: 100
+//		Extra toppings added: 150
+//		Extra chicken added: 200
+//		bill: 1000
 		
 		
 	}
