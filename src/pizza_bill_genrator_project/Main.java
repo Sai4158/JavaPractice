@@ -18,7 +18,7 @@ public class Main {
 		
 		//getting them from a diffrent class and them printing them here
 		//Encapsulating
-		DeluxPizza dp = new DeluxPizza(true);
+		DeluxPizza dp = new DeluxPizza(false);
 		dp.extraCheese();
 		dp.addExtraTopings();
 		dp.getBill();
