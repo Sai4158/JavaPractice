@@ -6,7 +6,7 @@ public class Account {
 	private String  Name;
 	private String Email;
 	private	String Phone;
-	
+
 	//constructor
 	public  Account(String Number, double Balance, String  Name, String Email, String Phone) {
 		this.Number = Number;
@@ -16,15 +16,25 @@ public class Account {
 		this.Phone = Phone;
 
 	}
-	
+
 	//deposit method 
 	public void depositemoney(double depositedmoney) {
 		this.Balance+=depositedmoney;
-		System.out.println("deposite done, new balance is " + this.Balance);
+		System.out.println("Deposit done, new balance is " + this.Balance);
 	}
-	
-	
-	
+
+	//withdraw money 
+	public void withdrawmoney(double Withdrawedmoney) {
+		//if amount less 0 say no, if else withdraw the amount
+		if(this.Balance - Withdrawedmoney <0) {
+			System.out.println("Withdraw not done negative amount");
+		} else {
+			this.Balance -=  Withdrawedmoney;
+			System.out.println("Withdraw successful, current balance " + this.Balance);
+
+		}
+	}
+
 	//get and set methods
 	public String getNumber() {
 		return Number;
@@ -56,5 +66,5 @@ public class Account {
 	public void setPhone(String phone) {
 		Phone = phone;
 	}
-	
+
 }
