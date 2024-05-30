@@ -31,11 +31,11 @@ public class Car {
 
 	
 	//for others ones- auto generated
-	public int getGears() {
+	public int getgears() {
 		return gears;
 	}
 
-	public void setGears(int gears) {
+	public void Gears(int gears) {
 		this.gears = gears;
 	}
 
