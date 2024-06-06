@@ -37,8 +37,17 @@ public class Main {
 		//now player2
 		
 //		the true is for armour, which descrese the damage
-		Player2 player2 =  new Player2("nxnwx","sword",100, false);
+		Player2 player2 =  new Player2("nxnwx","sword",100, true);
 		
-		player2.damageGun1();
+		player2.damageGun1();;
+		player2.damagebyGun2();;
+		
+		player2.heal();
+
+		
+//		Player 2
+//		Armour is on. Got hit by gun 1. Health is reduced by 20, New health is 80
+//		Armour is on. Got hit by gun 1. Health is reduced by 40, New health is 40
+//		Health is 100
 	}
 }
