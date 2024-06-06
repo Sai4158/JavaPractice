@@ -10,7 +10,13 @@ public class Player1 {
 		super();
 		this.name = name;
 		this.weapon = weapon;
-		this.health = health;
+		//if health is less than 0 or greater then 100 set the health to 100
+		if(health < 0 || health > 100) {
+			this.health = 100;
+		} else {
+			this.health = health;
+		}
+		
 
 	}
 	public void damageGun1() {

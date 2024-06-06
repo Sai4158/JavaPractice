@@ -14,10 +14,11 @@ public class Player2 extends Player1 {
 	}
 
 	//override method
+//	gun1 settings
 	@Override
 	public void damageGun1() {
 		if(armour) {
-			this.health -= 30;
+			this.health -= 20;
 		}
 		if(this.health <=0) {
 			this.health = 0;
@@ -25,8 +26,38 @@ public class Player2 extends Player1 {
 		}
 		
 		if(!armour) {
+			this.health -= 30;
 			this.health = 0;
-			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 40, New health is " + this.health);		}
+			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 30, New health is " + this.health);
+
+		}
+		if(this.health ==0) {
+			System.out.println(getName() + " is dead");
+		}
 	}
+
+//	@Override method 
+//	increase the power since this is gun2
 	
+	@Override
+	public void damagebyGun2() {
+		if(armour) {
+			this.health -= 40;
+		}
+		if(this.health <=0) {
+			this.health = 0;
+			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 40, New health is " + this.health);
+		}
+		
+		if(!armour) {
+			this.health -= 50;
+			this.health = 0;
+			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 50, New health is " + this.health);
+
+		}
+		if(this.health ==0) {
+			System.out.println(getName() + " is dead");
+		}
+	}
+		
 }
