@@ -19,6 +19,11 @@ public class Player1 {
 		
 
 	}
+	
+	
+	
+	//damage by gun1 
+	
 	public void damageGun1() {
 		this.health -= 30;
 
@@ -26,12 +31,16 @@ public class Player1 {
 		if(this.health <=0) {
 			this.health = 0;
 		} 
-		System.out.println("got hit by gun 1, Health is reducdeed by 30" + " new health is" + this.health);
+		System.out.println("got hit by gun 1, Health is reduced by 30" + " new health is " + this.health);
 
 		if(this.health == 0) {
 			System.out.println(getName() + " is dead");
 		}
 	}
+	
+	
+	
+	
 
 	public void damagebyGun2() {
 		this.health -= 50;
@@ -40,7 +49,7 @@ public class Player1 {
 		if(this.health <=0) {
 			this.health = 0;
 		} 
-		System.out.println("got hit by gun 1, Health is reducdeed by 50" + " new health is" + this.health);
+		System.out.println("got hit by gun 1, Health is reduced by 50" + " new health is " + this.health);
 
 		if(this.health == 0) {
 			System.out.println(getName() + " is dead");
