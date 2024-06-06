@@ -2,33 +2,34 @@ package simpleGame;
 
 //extends all the properties from the player1
 public class Player2 extends Player1 {
-	
+
 	private int health;
 	private boolean armour;
-	
+
 	public Player2(String name, String weapon, int health, boolean armour) {
 		super(name, weapon, health);
-		
+
 		this.health = health;
 		this.armour = armour;
 	}
 
 	//override method
-//	gun1 settings
+	//	gun1 settings
 	@Override
 	public void damageGun1() {
 		if(armour) {
 			this.health -= 20;
+			if(this.health <=0) {
+				this.health = 0;
+				System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 20, New health is " + this.health);
+			}
 		}
-		if(this.health <=0) {
-			this.health = 0;
-			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 20, New health is " + this.health);
-		}
-		
+
+
 		if(!armour) {
 			this.health -= 30;
 			this.health = 0;
-			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 30, New health is " + this.health);
+			System.out.println("Armour is off. Got hit by gun 1. Health is reduced by 30, New health is " + this.health);
 
 		}
 		if(this.health ==0) {
@@ -36,9 +37,9 @@ public class Player2 extends Player1 {
 		}
 	}
 
-//	@Override method 
-//	increase the power since this is gun2
-	
+	//	@Override method 
+	//	increase the power since this is gun2
+
 	@Override
 	public void damagebyGun2() {
 		if(armour) {
@@ -48,7 +49,7 @@ public class Player2 extends Player1 {
 			this.health = 0;
 			System.out.println("Armour is on. Got hit by gun 1. Health is reduced by 40, New health is " + this.health);
 		}
-		
+
 		if(!armour) {
 			this.health -= 50;
 			this.health = 0;
@@ -59,5 +60,12 @@ public class Player2 extends Player1 {
 			System.out.println(getName() + " is dead");
 		}
 	}
-		
+
+	//this mehtod was imported from player 1 to player2
+	@Override
+	public void heal() {
+		// TODO Auto-generated method stub
+		super.heal();
+	}
+
 }
