@@ -22,14 +22,20 @@ public class PropPractice {
 		
 		
 		//this is how you add the properties 
+		// this is key value pair
 		Properties prop = new Properties();
 		prop.setProperty("url","local Host");
 		prop.setProperty("username","sai41");
 		prop.setProperty("password","hyr123");
+	
 
 		
 		//this is how to put the data in the file 
+
 		FileOutputStream fos = new FileOutputStream(file);
 		
+		//this is how to send the data to the file 
+		//save method 
+		prop.store(fos, "");
 	}
 }
