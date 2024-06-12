@@ -58,6 +58,9 @@ public class PropPractice {
 		Collection<Object> c = prop.values();
 		System.out.println(c);
 
+		//will get custom value
+		System.out.println(prop.getProperty("username"));
+		//sai41
 
 
 	}
