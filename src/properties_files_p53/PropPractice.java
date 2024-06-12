@@ -1,9 +1,11 @@
 package properties_files_p53;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Set;
 
 public class PropPractice {
 	public static void main(String[] args) throws IOException {
@@ -36,6 +38,18 @@ public class PropPractice {
 		
 		//this is how to send the data to the file 
 		//save method 
-		prop.store(fos, "");
+		prop.store(fos, "New prop file is created");
+		
+		System.out.println();
+		//this is how you can read the data from the file 
+		//keys cannot be duplicated
+		
+		//you can do it using the set method.
+		
+		FileInputStream fis = new FileInputStream(file);
+		prop.load(fis);
+		
+		Set <String> keys = prop.stringPropertyNames();
+		System.out.println(keys);
 	}
 }
