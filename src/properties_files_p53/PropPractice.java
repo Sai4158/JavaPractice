@@ -61,7 +61,14 @@ public class PropPractice {
 		//will get custom value
 		System.out.println(prop.getProperty("username"));
 		//sai41
-
-
+		
+		System.out.println("------------------");
+		
+		
+		//using foreach to print the keys
+		//priting key and value, make sure to use String for the value
+		for(Object keys1 : prop.keySet()) {
+			System.out.println(keys1 + ">>>>" + prop.getProperty((String)keys1));
+		}
 	}
 }
