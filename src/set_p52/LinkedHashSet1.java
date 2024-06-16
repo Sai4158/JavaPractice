@@ -21,7 +21,9 @@ public class LinkedHashSet1 {
 		hs.add("abc");
 		hs.add("1234");
 		hs.add("qwerty");
+		hs.add("TEST1");
 
+		
 		//then print it out
 		System.out.println(hs);
 		
