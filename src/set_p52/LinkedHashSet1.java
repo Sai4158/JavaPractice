@@ -14,8 +14,8 @@ public class LinkedHashSet1 {
 		
 		//LinkedHashSet 
 		LinkedHashSet<String> hs = new LinkedHashSet<String>();
-		
- 
+	
+
 		//add strings
 		hs.add("hello set");
 		hs.add("abc");
