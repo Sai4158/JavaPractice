@@ -31,6 +31,7 @@ public class PropPractice {
 		prop.setProperty("username","sai41");
 		prop.setProperty("password","hyr123");
 
+		
 		//this is how you update a value 
 		prop.setProperty("password","saiiiiii");
 		prop.remove("password");
