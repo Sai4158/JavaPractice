@@ -17,13 +17,16 @@ public class PropPractice2 {
 			abc.createNewFile();
 		}
 
-		System.out.print(abc.exists());
+		System.out.println(abc.exists());
 
 		//storing data to the prop file 
 		//this is how to put the data in the file 
 		Properties prop1 = new Properties();
+		prop1.setProperty("url","password");
 		prop1.setProperty("abhi","fort");
-
+		prop1.setProperty("de","se");
+		
+		prop1.remove("de");
 
 		//using file write 
 		FileWriter storeData = new FileWriter(abc);
