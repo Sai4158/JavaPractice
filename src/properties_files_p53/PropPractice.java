@@ -27,10 +27,13 @@ public class PropPractice {
 		//this is how you add the properties 
 		// this is key value pair
 		Properties prop = new Properties();
-		prop.setProperty("urls","local Host");
+		prop.setProperty("url","local Host");
 		prop.setProperty("username","sai41");
 		prop.setProperty("password","hyr123");
 
+		//making a second Properties
+		Properties prop2 = new Properties();
+		prop2.setProperty(null, null)
 		
 		//this is how you update a value 
 		prop.setProperty("password","saiiiiii");

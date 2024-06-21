@@ -3,7 +3,9 @@ package properties_files_p53;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Properties;
+import java.util.Set;
 
 public class PropPractice2 {
 	public static void main(String[] args) throws IOException {
@@ -18,13 +20,21 @@ public class PropPractice2 {
 
 		//storing data to the prop file 
 		//this is how to put the data in the file 
-		Properties prop = new Properties();
-		prop.setProperty("urls","local Host");
+		Properties prop1 = new Properties();
+		prop1.setProperty("urls","local Host");
 		
-		FileOutputStream fos = new FileOutputStream(abc);
+		FileOutputStream storeData = new FileOutputStream(abc);
 
 		//this is how to send the data to the file 
 		//save method 
-		prop.store(fos, "New prop file is created");
+		prop1.store(storeData, "Storing data");
+		
+		//printing using keys 
+		Set <Object> keys = prop1.keySet();
+		System.err.println(keys);
+		
+		//will print the values 
+		Collection<Object> values =  prop1.values();
+		System.out.println(values);
 	}
 }
