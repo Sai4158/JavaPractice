@@ -1,6 +1,7 @@
 package iterator_p54;
 
 import java.util.Enumeration;
+import java.util.Hashtable;
 import java.util.Vector;
 
 public class Termination {
@@ -29,7 +30,20 @@ public class Termination {
 			System.out.println(e.nextElement());
 		}
 		
+		System.out.println("");
 		
+		//using Hashtable -  key and value pair 
+		Hashtable<String, Integer> ages =  new Hashtable();
+		ages.put("india", 123);
+		ages.put("china", 134);
+		ages.put("usa", 544);
 		
+		//storing using the enumeration
+		Enumeration<Integer> a = ages.elements();
+		
+		//while loop 
+		while(a.hasMoreElements()) {
+			System.out.println(a.nextElement());
+		}
 	}
 }
