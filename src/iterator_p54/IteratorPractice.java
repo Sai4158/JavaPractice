@@ -26,6 +26,7 @@ public class IteratorPractice {
 		//using while loop print 
 		while(al.hasNext()) {
 			System.out.println(al.next());
+			al.remove();
 		}
 	}
 }
