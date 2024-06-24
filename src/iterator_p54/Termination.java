@@ -54,7 +54,6 @@ public class Termination {
 		//using properties with enumeration
 		Properties prop = new Properties();
 
-		prop.setProperty("url","/google.com");
 		prop.setProperty("google", "sundarpicach");
 
 		//storing using enumeration
