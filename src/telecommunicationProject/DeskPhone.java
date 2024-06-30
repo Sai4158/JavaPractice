@@ -14,19 +14,31 @@ public class DeskPhone implements Telephone{
 	@Override
 	public void powerOn() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Desk phone always has power");
 	}
 
 	@Override
-	public void number() {
+	public void number( ) {
 		// TODO Auto-generated method stub
-		
+		if(isRinging) {
+			System.out.println("Now ringing " + myNumber + " on deskphone ");
+			isRinging = false;
+		}		
+		else{
+			System.err.println("Phone is not ringing");
+		}
 	}
 
 	@Override
 	public void phoneCall() {
 		// TODO Auto-generated method stub
-		
+		if(isRinging) {
+			System.out.println("Now ringing " + myNumber + " on deskphone ");
+			isRinging = false;
+		}		
+		else{
+			System.err.println("Phone is not ringing");
+		}
 	}
 
 	@Override
@@ -41,5 +53,8 @@ public class DeskPhone implements Telephone{
 		
 	}
 	
-	
+	@Override
+    public boolean isRinging() {
+        return false;
+    }
 }

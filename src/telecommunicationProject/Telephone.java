@@ -5,14 +5,16 @@ public interface Telephone {
 	void powerOn();
 	
 	//dial a number 
-	void number();
+	void dail(String PhoneNumber);
 	
 	//answer phone call 
-	void phoneCall();
+	void answer();
 	
 	//call another phone
-	void anotherPhgone();
+	//boolean -  true or false
+	// this will take input of String PhoneNumber
+	boolean CallPhone(String PhoneNumber);
 	
 	//is ringing 
-	void ringing();
+	boolean isRinging();
 }
