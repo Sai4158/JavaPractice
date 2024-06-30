@@ -5,6 +5,11 @@ public class DeskPhone implements Telephone{
 	//Variables 
 	private String myNumber;
 	private boolean isRinging;
+	
+	public DeskPhone(String myNumber) {
+		this.myNumber = myNumber;
+	}
+	
 	@Override
 	public void powerOn() {
 		// TODO Auto-generated method stub
@@ -52,11 +57,12 @@ public class DeskPhone implements Telephone{
 	}
 	
 	
+//	this will return isRinging
 	
 	@Override
 	public boolean isRinging() {
 		// TODO Auto-generated method stub
-		return false;
+		return isRinging;
 	}
 	
 
