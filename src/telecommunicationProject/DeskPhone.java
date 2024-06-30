@@ -48,7 +48,7 @@ public class DeskPhone implements Telephone{
 			System.out.println("");
 			isRinging = false;
 		}
-		return false;
+		return isRinging;
 	}
 	
 	
