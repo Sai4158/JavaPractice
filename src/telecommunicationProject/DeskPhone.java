@@ -48,6 +48,7 @@ public class DeskPhone implements Telephone{
 	public boolean CallPhone(String PhoneNumber) {
 		// TODO Auto-generated method stub
 		if(PhoneNumber == myNumber) {
+			isRinging = true;
 			System.out.println("Phone is ringing");
 		}else {
 			System.out.println("");
