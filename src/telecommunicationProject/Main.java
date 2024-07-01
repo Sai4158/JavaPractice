@@ -28,3 +28,14 @@ public class Main {
 		mobile.answer();
 	}
 }	
+
+
+
+//Desk phone always has power
+//Phone is ringing
+//Now ringing 123456789 on deskphone 
+//----------------------------
+//This is for the phone class
+//Phone Powered On
+//Phone is ringing
+//Answering the phone
