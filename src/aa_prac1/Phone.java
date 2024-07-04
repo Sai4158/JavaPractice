@@ -6,6 +6,6 @@ public interface Phone {
 	public void speaker();
 	public void display();
 	public void camera();
-	public void flashLight();
+	public void flashLight(boolean flash);
 	
 }
