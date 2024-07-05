@@ -70,6 +70,6 @@ public class Combine implements Phone {
 	@Override
 	public void screenSize(double size) {
 		// TODO Auto-generated method stub
-		System.out.println(size);
+		System.out.println("the screen you opted for is "+size);
 	}
 }
