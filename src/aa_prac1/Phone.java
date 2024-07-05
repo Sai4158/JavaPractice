@@ -7,5 +7,6 @@ public interface Phone {
 	public void display();
 	public void camera();
 	public void flashLight(boolean flash);
+	public void screenSize (double size);
 	
 }

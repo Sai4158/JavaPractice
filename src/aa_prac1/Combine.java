@@ -66,4 +66,10 @@ public class Combine implements Phone {
             System.out.println("Flashlight is turned off.");
         }
     }
+
+	@Override
+	public void screenSize(double size) {
+		// TODO Auto-generated method stub
+		System.out.println(size);
+	}
 }

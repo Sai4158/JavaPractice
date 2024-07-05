@@ -21,5 +21,7 @@ public class Main {
 		//this will take a true of false 
 		phone.flashLight(true);
 		
+		//this is for the screen size
+		phone.screenSize(5.5);
 	}
 }
