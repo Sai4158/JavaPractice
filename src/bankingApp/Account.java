@@ -27,12 +27,17 @@ public class Account {
 	public void withdrawmoney(double Withdrawedmoney) {
 		//if amount less 0 say no, if else withdraw the amount
 		if(this.Balance - Withdrawedmoney <0) {
-			System.out.println("Withdraw not done negative amount");
+			System.out.println(" negative amount");
 		} else {
 			this.Balance -=  Withdrawedmoney;
 			System.out.println("Withdraw successful, current balance " + this.Balance);
 
 		}
+		int a =100;
+		int b =200;
+		int c=300;
+		
+		System.out.printf("%d + %d + %d ", a, b, c);
 	}
 
 	//get and set methods
