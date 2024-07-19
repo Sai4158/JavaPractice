@@ -8,5 +8,7 @@ public class Numbers extends Nums {
 		
 		numbb.a();
 		numbb.b();
+		
+		numbb.Abc(" Sai");
 	}
 }
