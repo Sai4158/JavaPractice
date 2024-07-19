@@ -10,5 +10,9 @@ public class Numbers extends Nums {
 		numbb.b();
 		
 		numbb.Abc(" Sai");
+		
+		numbb.cars(3, 34);
+		numbb.cars(324, 2342, 1);
+
 	}
 }
