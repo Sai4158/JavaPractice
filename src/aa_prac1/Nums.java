@@ -44,6 +44,9 @@ public class Nums implements NumTest {
 		// TODO Auto-generated method stub
 		this.a =a;
 		this.b =b;
+		
+		System.out.printf("%d and %d",a, b );
+		System.out.println();
 	}
 	@Override
 	public void cars(int a, int b, int c) {
@@ -51,5 +54,7 @@ public class Nums implements NumTest {
 		this.a =a;
 		this.b =b;
 		this.c =c;
+		System.out.printf("%d and %d and %d",a, b, c);
+
 	}
 }
