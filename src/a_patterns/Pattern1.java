@@ -1,4 +1,4 @@
-package aa_prac1;
+package a_patterns;
 
 import java.util.Iterator;
 
