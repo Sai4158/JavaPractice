@@ -14,3 +14,14 @@ public class Pattern4 {
 		}
 	}
 }
+
+//a a a a a a a a a a 
+//a a a a a a a a a 
+//a a a a a a a a 
+//a a a a a a a 
+//a a a a a a 
+//a a a a a 
+//a a a a 
+//a a a 
+//a a 
+//a 
