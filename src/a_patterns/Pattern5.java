@@ -8,7 +8,8 @@ public class Pattern5 {
 		patt.pattern1();
 		patt.pattern2();
 		patt.pattern3();
-		patt.Pattern5();
+		patt.pattern4();
+		patt.Pattern5();		
 	}
 
 
@@ -57,6 +58,27 @@ public class Pattern5 {
 			for (int j = i; j <n; j++) {
 				System.out.print("  ");
 			}
+
+//			print the star after 
+			for (int j = 0; j< i; j++) {
+				System.out.print("1 ");
+
+			}
+			
+			System.out.println();
+		}
+	}
+
+	
+//	left Triangle 
+//	this is same as the triangle
+//	but you add extra space and remove wording spacing
+	public void pattern4() {
+		int n = 10;
+//		print 10 times
+		for (int i = 0; i <n ; i++) {
+
+			// remove each word spacing after it 
 
 //			print the star after 
 			for (int j = 0; j< i; j++) {
