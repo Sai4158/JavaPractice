@@ -9,7 +9,8 @@ public class Pattern5 {
 		patt.pattern2();
 		patt.pattern3();
 		patt.pattern4();
-		patt.Pattern5();		
+		patt.Pattern5();	
+		patt.pattern7();
 	}
 
 
@@ -45,47 +46,47 @@ public class Pattern5 {
 		}
 	}
 
-//	Right Triangle 
-//	this is same as the triangle
-//	but you add extra space 
+	//	Right Triangle 
+	//	this is same as the triangle
+	//	but you add extra space 
 	public void pattern3() {
 		int n = 10;
-//		print 10 times
+		//		print 10 times
 		for (int i = 0; i <n ; i++) {
 
-//			print gap after each line and then 10 times
-//			add extra space here for the right triangle
+			//			print gap after each line and then 10 times
+			//			add extra space here for the right triangle
 			for (int j = i; j <n; j++) {
 				System.out.print("  ");
 			}
 
-//			print the star after 
+			//			print the star after 
 			for (int j = 0; j< i; j++) {
 				System.out.print("1 ");
 
 			}
-			
+
 			System.out.println();
 		}
 	}
 
-	
-//	left Triangle 
-//	this is same as the triangle
-//	but you add extra space and remove wording spacing
+
+	//	left Triangle 
+	//	this is same as the triangle
+	//	but you add extra space and remove wording spacing
 	public void pattern4() {
 		int n = 10;
-//		print 10 times
+		//		print 10 times
 		for (int i = 0; i <n ; i++) {
 
 			// remove each word spacing after it 
 
-//			print the star after 
+			//			print the star after 
 			for (int j = 0; j< i; j++) {
 				System.out.print("1 ");
 
 			}
-			
+
 			System.out.println();
 		}
 	}
@@ -111,4 +112,24 @@ public class Pattern5 {
 	}
 
 
+
+	//	pattern 6 -  upside down right triangle 
+
+	public void pattern7() {
+		//	this is for upside right triangle 
+		//	repeat this for 5 times 
+		for (int i = 0; i < 5; i++) {
+
+			//	add a space after line
+			for (int j = 0; j <i; j++) {
+				System.out.print(" ");
+			}
+
+			//add the symbol and then add gap after it 
+			for (int j = i; j < 5; j++) {
+				System.out.print("6");
+			}
+			System.out.println();
+		}
+	}
 }
