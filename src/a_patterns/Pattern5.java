@@ -12,6 +12,8 @@ public class Pattern5 {
 		patt.Pattern5();	
 		patt.pattern6();
 		patt.pattern7();
+		patt.pattern8();
+
 	}
 
 
@@ -150,6 +152,20 @@ public class Pattern5 {
 			for (int j = i; j < 5; j++) {
 				System.out.print("6");
 			}
+			System.out.println();
+		}
+	}
+	
+//	Simple triangle 
+	public void pattern8() {
+		
+		for (int i = 0; i < 5; i++) {
+
+			//	add a space after line
+			for (int j = 0; j <i; j++) {
+				System.out.print("5 ");
+			}
+			
 			System.out.println();
 		}
 	}

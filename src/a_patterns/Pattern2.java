@@ -4,7 +4,6 @@ public class Pattern2 {
 	public static void main(String[] args) {
 		
 //		this is pattern 2
-		
 		int n = 5;
 		
 //		make sure this is <= "="
