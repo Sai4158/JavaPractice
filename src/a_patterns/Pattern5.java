@@ -10,6 +10,7 @@ public class Pattern5 {
 		patt.pattern3();
 		patt.pattern4();
 		patt.Pattern5();	
+		patt.pattern6();
 		patt.pattern7();
 	}
 
@@ -113,6 +114,26 @@ public class Pattern5 {
 
 
 
+	// practice 
+	public void pattern6() {
+		//	this is for upside right triangle 
+		//	repeat this for 5 times 
+		int n = 5;
+		for (int i = 0; i < n; i++) {
+			
+//			this is for the space
+			for (int j = 0; j <i ; j++) {
+				System.out.print("   ");
+			}
+
+			// this is for the word
+			for (int j = i; j < n; j++) {
+				System.out.print("5");
+			}
+			System.out.println("");
+		}
+	}
+
 	//	pattern 6 -  upside down right triangle 
 
 	public void pattern7() {
@@ -132,4 +153,5 @@ public class Pattern5 {
 			System.out.println();
 		}
 	}
+
 }
