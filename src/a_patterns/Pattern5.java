@@ -4,8 +4,10 @@ public class Pattern5 {
 	
 public static void main(String[] args) {
 	Pattern5 patt =  new Pattern5();
-	patt.Pattern5();
+
 	patt.pattern1();
+	patt.pattern2();
+	patt.Pattern5();
 	}
 
 
@@ -17,6 +19,27 @@ public void pattern1() {
 			System.out.print(" % ");
 		}
 		System.out.println("");
+	}
+}
+
+
+//triangle
+
+public void pattern2() {
+//	how many rows -  5
+	for (int i = 0; i <5; i++) {
+		
+//		gap after each line
+		for (int j = i; j < 5; j++) {
+			System.out.print(" ");
+		}
+		
+//		print o after each for loop 
+		for (int j = 0; j < i; j++) {
+			System.out.print("O ");
+		}
+//		new line after each loop
+		System.out.println();
 	}
 }
 
