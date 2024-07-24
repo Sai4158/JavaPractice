@@ -13,6 +13,7 @@ public class Pattern5 {
 		patt.pattern6();
 		patt.pattern7();
 		patt.pattern8();
+		patt.pattern9();
 
 	}
 
@@ -122,8 +123,8 @@ public class Pattern5 {
 		//	repeat this for 5 times 
 		int n = 5;
 		for (int i = 0; i < n; i++) {
-			
-//			this is for the space
+
+			//			this is for the space
 			for (int j = 0; j <i ; j++) {
 				System.out.print("   ");
 			}
@@ -155,19 +156,42 @@ public class Pattern5 {
 			System.out.println();
 		}
 	}
-	
-//	Simple triangle 
+
+	//	Simple triangle 
 	public void pattern8() {
-		
+
 		for (int i = 0; i < 5; i++) {
 
 			//	add a space after line
 			for (int j = 0; j <i; j++) {
 				System.out.print("5 ");
 			}
-			
+
 			System.out.println();
 		}
 	}
 
+
+	//	simple triangle 
+
+	public void pattern9() {
+		System.out.println();
+
+		for (int i = 0; i <5; i++) {
+
+			//this is for to print spaces 
+			for (int j = i; j < 5; j++) {
+				System.out.print(" ");
+			}
+
+//			this for i print spaces 
+			for (int j = 0; j < i; j++) {
+				System.out.print("i ");
+			}
+			
+			
+			//new line after each loop
+			System.out.println();
+
+		}}
 }
