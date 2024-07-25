@@ -14,6 +14,7 @@ public class Pattern5 {
 		patt.pattern7();
 		patt.pattern8();
 		patt.pattern9();
+		patt.pattern10();
 
 	}
 
@@ -194,4 +195,26 @@ public class Pattern5 {
 			System.out.println();
 
 		}}
+	
+	
+//	simple triangle 
+	public void pattern10() {
+		int  n =5;
+		
+//		total 5 rows 
+		for (int i = 0; i < n; i++) {
+			
+//			to print spaces
+			for (int j = i; j < n; j++) {
+				System.out.print(" ");
+
+			}
+//		 this until
+			for (int j = 0; j < i; j++) {
+				System.out.print("5 ");
+
+			}
+		System.out.println();
+		}
+	}
 }
