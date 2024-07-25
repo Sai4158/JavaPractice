@@ -31,7 +31,7 @@ public class StudentController {
 
    
 
-    // Control object view types
+    // Control view type objects
     public void updateView() {
         view.printStudentDetails(model.getName(), model.getRollno());
     }
