@@ -7,8 +7,17 @@ public class DemoMVCpattern {
 		StudentView view = new StudentView();
 		StudentController controller = new StudentController(model, view);
 		
-//		call the methods 
+//		this will update the data 
 		controller.updateView();
+		
+//		add data using the set methods
+		controller.setStudentName("audi");
+		controller.setStudentRollNum("999");
+		
+//		then update it 
+		System.out.println();
+		controller.updateView();
+
 	}
 	
 	private static Student stu() {
