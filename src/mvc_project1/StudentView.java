@@ -6,6 +6,7 @@ public class StudentView {
 //		we will print out the details 
 		System.out.println("Student Deatails: ");
 		System.out.println("Name : " + studName );
+		System.out.println("lastname : " + studName );
 		System.out.println("Roll Number : " + studentRollNum );
 	}
 }
