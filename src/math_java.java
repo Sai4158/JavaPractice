@@ -67,5 +67,19 @@ public class math_java {
 			}
 			System.out.println();
 		}
+		
+		int qa = 5;
+
+		for (int i = 0; i < qa; i++) {
+			for (int j = 0; j < qa; j++) {
+				System.out.print(" ");
+
+			}
+			for (int j = i; j < qa; j++) {
+				System.out.print("^ ");
+
+			}
+			System.out.println();
+		}
 	}
 }
