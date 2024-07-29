@@ -30,11 +30,11 @@ public class EncapsulationPrac {
 		this.carColor = carColor;
 	}
 	
-	
+}
 	
 //	this is the main method 
 	
-	public static void main(String[] args) {
+	 class printer {
 		Scanner scanner = new Scanner(System.in);
         EncapsulationPrac h1 = new EncapsulationPrac();
 
@@ -52,12 +52,15 @@ public class EncapsulationPrac {
             " and this is the car number: " + h1.getCarNumber());
         
         scanner.close();
-        
-//        Enter car model: crv
-//        Enter car color: sliver
-//        Enter car number: 9999
-//        This is the car model: crv, this is the car color: sliver and this is the car number: 9999
+
+	}
+	
+		
+	public static void main(String[] args) {
+		printer main = new printer();
+		
+		
 	}
 	
 	
-}
+
