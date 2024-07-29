@@ -1,4 +1,4 @@
-package encapsulation_p35;
+package encaplation_p35;
 
 import java.util.Scanner;
 
