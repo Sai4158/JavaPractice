@@ -5,6 +5,7 @@ import java.util.Stack;
 public class Prac_1_Stack {
 	public static void main(String[] args) {
 
+//		this is stack  -  LIFO
 		Stack<String> s1 = new Stack<String>();
 
 		s1.add("1");
