@@ -13,6 +13,8 @@ public class EvenNums {
 		
 		even.evennums();
 		
+		even.oddnums();
+		
 	}
 	
 
@@ -28,4 +30,14 @@ public void evennums() {
 }
 
 
+// odd nums 
+public void oddnums() {
+	int maxnums = 100;
+	for (int i = 0; i < maxnums; i++) {
+		if( i % 2 != 0) {
+			System.out.println(i);
+		}
+		
+	}
+}
 }
