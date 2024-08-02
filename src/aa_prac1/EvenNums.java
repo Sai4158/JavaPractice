@@ -20,8 +20,10 @@ public class EvenNums {
 
 //	this will print the even nums 
 public void evennums() {
-	int maxnums = 100;
-	System.out.println();
+	int maxnums = 20;
+	System.out.println("-----------------------");
+	System.out.println("EVEN NUMBERS");
+	System.out.println("-----------------------");
 	for (int i = 0; i < maxnums; i++) {
 		if(i % 2 == 0) {
 			System.out.println(i);
@@ -32,7 +34,10 @@ public void evennums() {
 
 // odd nums 
 public void oddnums() {
-	int maxnums = 100;
+	int maxnums = 20;
+	System.out.println("-----------------------");
+	System.out.println("ODD NUMBERS");
+	System.out.println("-----------------------");
 	for (int i = 0; i < maxnums; i++) {
 		if( i % 2 != 0) {
 			System.out.println(i);
