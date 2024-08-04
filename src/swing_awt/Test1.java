@@ -7,14 +7,13 @@ public class Test1 extends JFrame {
 	
 	 public Test1() {
 	        initializeUI();
+	        
 	    }
 
-	    private void initializeUI() {
+	    public void initializeUI() {
 	        setTitle("Practice Window");
 	        setSize(600, 400);
 	        setDefaultCloseOperation(EXIT_ON_CLOSE);
-	        getContentPane().setBackground(Color.gray);
-
 	        
 	        // Label for first text field
 	        JLabel jl = new JLabel("Enter text here:");
@@ -33,7 +32,7 @@ public class Test1 extends JFrame {
 
 	        // Second text field for input
 	        JTextField tt1 = new JTextField();
-	        tt1.setBounds(15, 105, 200, 30); 
+	        tt1.setBounds(15, 105, 200, 30);
 	        add(tt1);
 
 	        setVisible(true);
