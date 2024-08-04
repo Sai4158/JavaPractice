@@ -1,18 +1,24 @@
 package swing_awt;
 
 import javax.swing.*;
+
+import java.awt.Color;
 import java.awt.event.*;
 
 public class Jf extends JFrame {
 
-    public Jf() {
+    public Jf() {     
+
         setTitle("Adding 2 nums");
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(700, 600);
         setLayout(null);
         setVisible(true);
-
+        
+        // Set background color on the content pane
+        getContentPane().setBackground(Color.gray);
+        
         JLabel j1  = new JLabel("Enter to 2 numbers to add");
 //      50 right, 50 down, 100 width and 30 tall 
         j1.setBounds(50, 25, 200, 10);
