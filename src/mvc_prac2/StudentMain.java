@@ -8,8 +8,18 @@ public class StudentMain {
 		
 		StudentController controller =  new StudentController(model, view);
 		
-//	
-		controller.setModel("ed");
+	
+//		Set the values 
+		controller.setStudentName("Sai");
+		controller.setStudentRollNo(4158);
 		
+		
+//		make sure to update the view 
+        controller.updateView();
+
 	}
 }
+
+//Student: 
+//Name : Sai
+//Roll Num : 4158
