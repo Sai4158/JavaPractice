@@ -31,11 +31,18 @@ public class StudentController {
 	    public int getStudentRollNo() {
 	        return model.getRollNo();
 	    }
-
+	    
+	    public boolean isCar() {
+			return model.isCar();
+		}
+		public void setCar(boolean car) {
+		 model.setCar(car);
+		
+		}
 	    
 //	    this will update the view
 	    public void updateView() {
-	        view.printStudent(model.getName(), model.getRollNo());
+	        view.printStudent(model.getName(), model.getRollNo(), model.isCar());
 	    }
 
 	

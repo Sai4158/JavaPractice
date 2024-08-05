@@ -3,7 +3,7 @@ package mvc_prac2;
 public class StudentModel {
 	private String name;
 	private int rollNo;
-	
+	private boolean car;
 	
 //	get and setters
 
@@ -19,5 +19,12 @@ public class StudentModel {
 	public void setRollNo(int rollNo) {
 		this.rollNo = rollNo;
 	}
+	public boolean isCar() {
+		return car;
+	}
+	public void setCar(boolean car) {
+		this.car = car;
+	}
 		
+	
 }

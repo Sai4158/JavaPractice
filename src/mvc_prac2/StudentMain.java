@@ -12,7 +12,7 @@ public class StudentMain {
 //		Set the values 
 		controller.setStudentName("Sai");
 		controller.setStudentRollNo(4158);
-		
+		controller.setCar(false);
 		
 //		make sure to update the view 
         controller.updateView();
