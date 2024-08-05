@@ -16,24 +16,27 @@ public class StudentController {
 
 	
 //	set and get
-	public StudentModel getModel() {
-		return model;
-	}
+	 public void setStudentName(String name) {
+	        model.setName(name);
+	    }
 
+	    public String getStudentName() {
+	        return model.getName();
+	    }
 
-	public void setModel(StudentModel model) {
-		this.model = model;
-	}
+	    public void setStudentRollNo(int rollNo) {
+	        model.setRollNo(rollNo);
+	    }
 
+	    public int getStudentRollNo() {
+	        return model.getRollNo();
+	    }
 
-	public StudentView getView() {
-		return view;
-	}
-
-
-	public void setView(StudentView view) {
-		this.view = view;
-	}
+	    
+//	    this will update the view
+	    public void updateView() {
+	        view.printStudent(model.getName(), model.getRollNo());
+	    }
 
 	
 }
