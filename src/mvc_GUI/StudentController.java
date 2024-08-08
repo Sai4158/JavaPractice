@@ -15,7 +15,7 @@ public class StudentController {
 		this.view = view;
 
 //		this is getting and update method and updating use a method
-		this.view.addUpdateButtonListener(new UpdateButtonListener());
+		view.addUpdateButtonListener(new UpdateButtonListener());
 	}
 
 	// ActionListener class for the update button
