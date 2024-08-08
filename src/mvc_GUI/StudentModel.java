@@ -1,12 +1,16 @@
 package mvc_GUI;
-
+//MODEL
 public class StudentModel {
 	
+//	variables
 	private String name;
 	private int rollno;
 	private boolean car;
 	
-//	get and set
+	
+//	------------
+//	get and set start
+	
 	public String getName() {
 		return name;
 	}
@@ -26,7 +30,7 @@ public class StudentModel {
 		this.car = car;
 	}
 	
-	
-
+//	get and set end
+//	------------
 	
 }

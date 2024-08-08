@@ -5,15 +5,16 @@ import java.awt.event.ActionListener;
 
 public class StudentController {
 
-	//	variables
-	private StudentModel model;
-	private StudentView view;
+	//	Assign model class to model and view to view
+	 StudentModel model;
+	 StudentView view;
 
 	//	make a constructor then bring in the variables 
 	public StudentController(StudentModel model, StudentView view) {
 		this.model = model;
 		this.view = view;
 
+//		this is getting and update method and updating use a method
 		this.view.addUpdateButtonListener(new UpdateButtonListener());
 	}
 
