@@ -93,7 +93,7 @@ public class StudentView extends JFrame {
 	}
 
 	//	display student 
-	// this is will take in name, rollno and car to display it 
+	// this is will take in name, rollno and car to display 
 	public void displayStudentDetails(String name, int rollNo, boolean car) {
 		displayArea.setText("Name: " + name + "\nRoll No: " + rollNo + "\nHas Car: " + (car ? "Yes" : "No"));
 	}
