@@ -97,6 +97,6 @@ public class StudentView extends JFrame {
 //	will display results in text area
 //	setText will put values in it 
 	public void displayStudentDetails(String name, int rollNo, boolean car) {
-		displayArea.setText("Name: " + name + "\nRoll No: " + rollNo + "\nHas Car: " + (car ? "Yes" : "No"));
+		displayArea.setText("Name: " + name + "\nRoll No: " + rollNo + "\nHas Car: " + (car ? "Yes" : "No") +"\n"  +"Thank you");
 	}
 }
