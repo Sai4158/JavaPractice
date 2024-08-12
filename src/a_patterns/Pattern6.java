@@ -18,5 +18,31 @@ public class Pattern6 {
 			}
 			System.out.println();
 		}
+		
+		System.out.println();
+		System.out.println();
+
+
+		num();
 	}
+	
+	static void num() {
+//		new triangle
+	int t =5;
+	for (int i = 0; i < t; i++) {
+		
+		for (int j = i; j < t; j++) {
+			System.out.print(" ");
+
+		}
+		for (int j = 0; j < i; j++) {
+			System.out.print("> ");
+
+		}
+		System.out.println();
+	}
+	
+	
+	}
+	
 }
