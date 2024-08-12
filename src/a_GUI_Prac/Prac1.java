@@ -14,6 +14,8 @@ public class Prac1 extends JFrame {
 		 JPanel panel = new JPanel();
 //		 make sure to add the JPanel
 		 add(panel);
+		 
+//	make sure to set to null layout
 	     panel.setLayout(null);
 
 	        
