@@ -5,95 +5,53 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 
-public class CalculatorView extends JFrame{
+public class CalculatorView extends JFrame {
 	
-//	make a input box to enter the text
 	private JTextField firstNum = new JTextField(10);
-	
-	private JLabel additionLabel =  new JLabel("+");
-	
+	private JLabel additionLabel = new JLabel("+");
 	private JTextField secondNum = new JTextField(10);
+	private JButton sumButton = new JButton("Calculate");
+	private JTextField calculationResult = new JTextField(10);
 	
-	private JButton sum = new JButton("Calculate");
-	
-	private JTextField calcution = new JTextField(10);
-	
-	
-	CalculatorView() {
-		JPanel calcPannel = new JPanel();
+	public CalculatorView() {
+		JPanel calcPanel = new JPanel();
 		
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setSize(600,200);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(600, 200);
 		this.setVisible(true);
 		this.setLayout(null);
 		
-//		now add the stuff to the pannels
+		// Add components to the panel
+		calcPanel.add(firstNum);
+		calcPanel.add(additionLabel);
+		calcPanel.add(secondNum);
+		calcPanel.add(sumButton);
+		calcPanel.add(calculationResult);
 		
-		calcPannel.add(firstNum);
-		calcPannel.add(additionLabel);
-		calcPannel.add(secondNum);
-		calcPannel.add(sum);
-		calcPannel.add(calcution);
-		
-		this.add(calcPannel); 
-	}
-
-
-	public JTextField getFirstNum() {
-		return firstNum;
-	}
-
-
-	public void setFirstNum(JTextField firstNum) {
-		this.firstNum = firstNum;
-	}
-
-
-	public JLabel getAdditionLabel() {
-		return additionLabel;
-	}
-
-
-	public void setAdditionLabel(JLabel additionLabel) {
-		this.additionLabel = additionLabel;
-	}
-
-
-	public JTextField getSecondNum() {
-		return secondNum;
-	}
-
-
-	public void setSecondNum(JTextField secondNum) {
-		this.secondNum = secondNum;
-	}
-
-
-	public JButton getSum() {
-		return sum;
-	}
-
-
-	public void setSum(JButton sum) {
-		this.sum = sum;
-	}
-
-
-	public JTextField getCalcution() {
-		return calcution;
-	}
-
-
-	public void setCalcution(JTextField calcution) {
-		this.calcution = calcution;
+		this.add(calcPanel); 
 	}
 	
-	
-	void addCalculationListener(ActionListener listenForCalcButton) {
-		
-		calcution.addActionListener(listenerForCalcButton);
+	public int getFirstNum() {
+		return Integer.parseInt(firstNum.getText());
 	}
 	
+	public int getSecondNum() {
+		return Integer.parseInt(secondNum.getText());
+	}
 	
-
+	public int getCalculationValue() {
+		return Integer.parseInt(calculationResult.getText());
+	}
+	
+	public void setCalculationValue(int value) {
+		calculationResult.setText(Integer.toString(value));
+	}
+	
+	public void addCalculationListener(ActionListener listenForCalcButton) {
+		sumButton.addActionListener(listenForCalcButton);
+	}
+	
+	public void displayErrorMessage(String errorMessage) {
+		JOptionPane.showMessageDialog(this, errorMessage);
+	}
 }

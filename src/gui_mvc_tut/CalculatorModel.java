@@ -4,16 +4,11 @@ public class CalculatorModel {
 	
 	private int calculationValue;
 	
-	public void  addTwoNumbers(int firstNum, int secondNum) {
-		
+	public void addTwoNumbers(int firstNum, int secondNum) {
 		calculationValue = firstNum + secondNum;
 	}
-
-	
-//	get and set 
 	
 	public int getCalculationValue() {
 		return calculationValue;
 	}
-	
 }
