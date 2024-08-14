@@ -17,6 +17,7 @@ public class CalculatorView extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(600, 200);
 		this.setVisible(true);
+		this.setTitle("Add two numbers");
 
 		// Add components to the panel
 		calcPanel.add(firstNum);
