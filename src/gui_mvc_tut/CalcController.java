@@ -1,7 +1,6 @@
 package gui_mvc_tut;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class CalcController {
 	
@@ -19,22 +18,15 @@ public class CalcController {
 	class CalculateListener implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			int firstNum, secondNum = 0;
+			// Get the numbers from the view
+			int firstNum = theView.getFirstNum();
+			int secondNum = theView.getSecondNum();
 			
-			try {
-				// Get the numbers from the view
-				firstNum = Integer.parseInt(theView.getFirstNum().getText());
-				secondNum = Integer.parseInt(theView.getSecondNum().getText());
-				
-				// Perform the calculation using the model
-				theModel.addTwoNumbers(firstNum, secondNum);
-				
-				// Update the view with the result
-				theView.setCalculationValue(theModel.getCalculationValue());
-			} catch (NumberFormatException ex) {
-				theView.displayErrorMessage("Please enter valid numbers.");
-			}
+			// Perform the calculation using the model
+			theModel.addTwoNumbers(firstNum, secondNum);
+			
+			// Update the view with the result
+			theView.setCalculationValue(theModel.getCalculationValue());
 		}
 	}
 }
-
