@@ -10,7 +10,7 @@ public class Math_Tables_loops {
 		int n = sc.nextInt();
 		
 		for (int i = 0; i < 15; i++) {
-			System.out.println(n + "x = " + n +i);
+			System.out.println(n + " x " + i + " = " + (n * i));
 		}
 	}
 }
