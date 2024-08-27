@@ -6,7 +6,7 @@ public class InvertedHalfPyramid_nums {
 			
 			int n =10;
 			
-			for (int i = 1; i <= n; i++) {
+			for (int i = n; i>= 0; i--) {
 				for (int j = 1; j <=i; j++) {
 					System.out.print(j);
 				}
@@ -16,3 +16,14 @@ public class InvertedHalfPyramid_nums {
 }
 
 
+
+//12345678910
+//123456789
+//12345678
+//1234567
+//123456
+//12345
+//1234
+//123
+//12
+//1
