@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import javax.naming.spi.DirStateFactory.Result;
 
 
-
 public class Methods {
 	
 //	int because I am returning the int
@@ -32,7 +31,8 @@ public class Methods {
 		int ab =  3;
 		int cd = 3;
 		
-		System.out.println(multiplyIntegers(ab, cd));
+		System.out.println("you are mulitiplying: " + ab +" x " + cd);
+		System.out.println("Answer: " + multiplyIntegers(ab, cd));
 		
 	}
 }
