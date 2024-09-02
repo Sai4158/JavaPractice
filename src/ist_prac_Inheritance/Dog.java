@@ -1,35 +1,23 @@
 package ist_prac_Inheritance;
 
 public class Dog extends Pet {
-//	make sure to declacre a variable here
-	private String breed;
 	
-	public Dog(String name, String breed) {
-		super(name);
-		this.breed =  breed;
-	}
+//	Constructor
+    public Dog(String name, String breed) {
+        super(name, breed);  
+    }
 
-	public  String DoTrick(String Command) {
-		if (Command.compareTo("sit")==0 || Command.compareTo("speak")==0) {
-			return String.format("%s did the trick %s", this.getName(), Command);
-		} else {
-			return String.format("%s stares at you ", this.getName());
-		}
-	}
-	
-//	set and gets 
-	
-	public String makeSound() {
-		return "woof";
-	}
+//    method 1 
+    public String doTrick(String command) {
+        if ("sit".equals(command) || "speak".equals(command)) {
+            return String.format("%s did the trick %s", this.getName(), command);
+        } else {
+            return String.format("%s stares at you", this.getName());
+        }
+    }
 
-	public String getBreed() {
-		return breed;
-	}
-
-	public void setBreed(String breed) {
-		this.breed = breed;
-	}
-	
-	
+//  method 2
+    public String makeSound() {
+        return "woof";
+    }
 }
