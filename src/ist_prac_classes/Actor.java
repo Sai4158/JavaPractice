@@ -5,12 +5,6 @@ public class Actor {
 		private String firstName;
 		private String lastName;
 		
-		public Actor() {
-			// TODO Auto-generated constructor stub
-			this.firstName = "";
-			this.lastName = "";
-		}
-		
 		
 //		get and set methods to access the instanceVariable on the main class 
 		public Actor(String firstName, String lastName) {
