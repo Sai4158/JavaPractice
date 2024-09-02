@@ -1,6 +1,7 @@
 package ist_prac_Inheritance;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Main {
 	public static void main(String[] args) {
@@ -8,13 +9,20 @@ public class Main {
         Dog dog1 = new Dog("Duke", "German Shepherd");
         Dog dog2 = new Dog("Aston", "golden retriver");
 
-		System.out.println(dog);
-		System.out.println(dog.doTrick("sit"));
-		System.out.println(dog.makeSound());
 		
 		ArrayList<Pet> pets = new ArrayList<Pet>();
 		pets.add(dog1);
 		pets.add(dog2);
+		
+		
+		for (int i = 0; i < pets.size(); i++) {
+			System.out.println(pets.get(i));
+			System.out.println(pets.get(i).doTrick("sit"));
+			System.out.println(pets.get(i).makeSound());
+			
+			System.out.println("----------------");
+
+		}
 	}
 }
 
