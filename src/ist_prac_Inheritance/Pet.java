@@ -29,7 +29,7 @@ public abstract class Pet {
 
     @Override
     public String toString() {
-        return name;
+        return String.format("%s %s", name, breed);
     }
 
     // Abstract methods
