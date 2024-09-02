@@ -29,3 +29,7 @@ public class Main {
 //Duke German Shepherd
 //Duke did the trick sit
 //woof
+//----------------
+//Aston golden retriver
+//Aston did the trick sit
+//woof
