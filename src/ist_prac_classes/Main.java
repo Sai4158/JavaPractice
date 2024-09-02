@@ -2,10 +2,8 @@ package ist_prac_classes;
 
 public class Main {
 	public static void main(String[] args) {
-		Actor abc = new Actor();
+		Actor abc = new Actor("Sai", " Rang");
 		
-		abc.setFirstName("Sai");
-		abc.setLastName(" Rang");
 		
 		System.out.println(abc.getFirstName() + abc.getLastName());
 	}
