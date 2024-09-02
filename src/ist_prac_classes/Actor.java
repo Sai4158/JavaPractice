@@ -12,7 +12,7 @@ public class Actor {
 		}
 		
 		
-
+//		get and set methods to access the instanceVariable on the main class 
 		public Actor(String firstName, String lastName) {
 			
 			this.firstName = firstName;
@@ -20,18 +20,33 @@ public class Actor {
 		}
 		
 		
-		
-//		get and set methods to access the instanceVariable on the main class 
+
+
+
 		public String getFirstName() {
 			return firstName;
 		}
+
+
+
 		public void setFirstName(String firstName) {
 			this.firstName = firstName;
 		}
+
+
+
 		public String getLastName() {
 			return lastName;
 		}
+
+
+
 		public void setLastName(String lastName) {
 			this.lastName = lastName;
+		}
+		
+
+		public String Spacer() {
+			return String.format("%s %s",firstName, lastName);
 		}
 }
