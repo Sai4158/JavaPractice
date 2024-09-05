@@ -1,4 +1,4 @@
-package ist_prac_Inheritance;
+Apackage ist_prac_Inheritance;
 
 import java.util.ArrayList;
 import java.util.Iterator;
