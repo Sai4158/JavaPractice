@@ -13,14 +13,17 @@ public class Day1_Arrays_loops {
 		}
 		
 		
-		System.out.println();
+		System.out.println("------------");
+		System.out.println("------------");
 		
+		
+//		Will print all the names in the array 
 		String name[] = {"AGGAM","Sai","Pranav"};
 		for (int i = 0; i < name.length; i++) {
 			System.out.print(name[i] + " ");
 		}
-	}
-}
+		
+	}}
 
 
 //4,5,6,3,45,6,3,43,
