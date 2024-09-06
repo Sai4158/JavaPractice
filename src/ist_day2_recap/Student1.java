@@ -37,7 +37,7 @@ public class Student1 {
 //	to String 
 	@Override
 	public String toString() {
-		return super.toString();
+		return "name= " + name + ", gpa= " + gpa;
 	}
 
 
