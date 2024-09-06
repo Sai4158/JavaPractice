@@ -1,0 +1,23 @@
+package a_DSA;
+
+public class Day1_counting_reapted_nums {
+	
+	public static void main(String[] args) {
+		
+//		counting all the matching elements in the array 
+		
+		int arr[] = {4,3,3,4,2,32,5,12,12,3,2,3};
+		
+		int count = 0;
+		
+		for (int i = 0; i < arr.length; i++) {
+//			if num is 3 then make sure to increase the count 
+			if(arr[i] == 3) {
+				count = 1 + count;
+				
+			}
+		}
+//		make sure to print it outside of the loop 
+		System.out.println(count);
+	}
+}
