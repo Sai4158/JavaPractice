@@ -14,7 +14,8 @@ public class Day1_counting_reapted_nums {
 		for (int i = 0; i < arr.length; i++) {
 //			if num is 3 then make sure to increase the count 
 			if(arr[i] == number) {
-				count = 1 + count;
+
+				count++;
 				
 			}
 		}
