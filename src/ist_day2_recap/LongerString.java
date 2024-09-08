@@ -14,10 +14,10 @@ public class LongerString{
 	}
 	
 	public String findLonger() {
-		if(str1.length() < str2.length()) {
-			return str2;
+		if(str1.length() > str2.length()) {
+			return str1;
 		} else {
-			 return str1;
+			 return str2;
 		}
 	}
 	
@@ -30,7 +30,7 @@ public class LongerString{
 	
 //	main method
 public static void main(String[] args) {
-	LongerString str =  new LongerString("BMW", "tesla");
+	LongerString str =  new LongerString("bmw", "tesla");
 	
 //		Printing 
 	System.out.println(str.findLonger());
