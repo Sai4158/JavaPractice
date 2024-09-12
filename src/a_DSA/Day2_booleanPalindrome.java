@@ -1,0 +1,24 @@
+package a_DSA;
+
+public class Day2_booleanPalindrome {
+	public static void main(String[] args) {
+		
+		String s = "sai";
+		boolean panlindrome = true;
+		
+//		get the length
+		int n = s.length();
+	
+		
+		for (int i = 0; i <n/2; i++) {
+			if(s.charAt(i)!=s.charAt(n-i-1)) {
+				panlindrome =  false;
+			}
+		}
+		if(panlindrome) {
+			System.out.println("yes");
+		}else {
+			System.out.println("No");
+		}
+	}
+}
