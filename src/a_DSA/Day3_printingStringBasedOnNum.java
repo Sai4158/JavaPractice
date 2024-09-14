@@ -12,7 +12,9 @@ public class Day3_printingStringBasedOnNum {
 		
 //		instead of this, we can make a function for it 
 //		we can call the function here 
-		fun("Sauu", 5);
+		fun("Sauu", 5); 
+		fun("dg", 1);
+		fun("S", 2);
 	}
 	
 	public static void fun(String s, int n) {
