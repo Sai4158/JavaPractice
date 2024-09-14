@@ -16,10 +16,23 @@ public class Day3_returnTypes {
 		return 6969;
 	}
 	
+	
+	public static String fam(int n, String sup) {
+		String ans = "";
+		for (int i = 0; i < n; i++) {
+			ans = ans + sup;
+		}
+				return ans;
+	}
+	
 	//main method 
 	
 	public static void main(String[] args) {
-
+		
+		 System.out.println(fam(4, "Sai "));
+		 
+		 
+		 
 		System.out.println(str());
 		System.out.println(boo());
 		System.out.println(in());
