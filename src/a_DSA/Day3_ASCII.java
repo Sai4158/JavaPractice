@@ -10,5 +10,17 @@ public class Day3_ASCII {
 		int n = 's';
 		
 		System.out.println(n);
+//This is will print the ASCII key of the specific numbers		
+//		115
+		
+		
+//	----------------------------------------------
+//	When you store a int in a "double quotes" it will throw a error
+		
+		int  m = "d";
+		System.out.println(m);
+		
+//		This is will throw a error
+				
 	}
 }
