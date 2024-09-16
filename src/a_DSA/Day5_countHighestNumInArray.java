@@ -8,10 +8,11 @@ public class Day5_countHighestNumInArray {
 		int ans = 0;
 		
 		for (int i = 0; i < arr.length; i++) {
+//			take 2 ints, find the largest 
 		ans = 	Math.max(ans, arr[i]);
 
 		}
-		
+
 		System.out.println(ans);
 
 	}
