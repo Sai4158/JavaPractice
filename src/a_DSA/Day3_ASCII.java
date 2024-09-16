@@ -17,7 +17,7 @@ public class Day3_ASCII {
 //	----------------------------------------------
 //	When you store a int in a "double quotes" it will throw a error
 		
-		int  m = "d";
+		String  m = "d";
 		System.out.println(m);
 		
 //		This is will throw a error
