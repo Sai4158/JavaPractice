@@ -2,9 +2,15 @@ package a_DSA_leetcode;
 
 public class _2114_Maximum_Number_of_Words_Found_in_Sentences {
 	public static int mostWordsFound(String[] sentences) {
+		
+//		count i it 
         int count = 0;
 
+//        1st loop to run until senctance length 
+        
         for(int i = 0; i < sentences.length; i++){
+        	
+//        	get the index 
         String s = sentences[i];
         int temp = 1;
 
