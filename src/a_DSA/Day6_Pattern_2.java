@@ -5,14 +5,18 @@ public class Day6_Pattern_2 {
 		
 //		row - r
 //		coloum - c
+		int r= 3;
+		int c= 20;
 		
-		int r= 20;
-		int c= 3;
-		
-		for (int i = 0; i < c; i++) {
-			for (int j = 0; j < r ; j++) {
+//		row
+		for (int i = 0; i < r; i++) {
+			
+//			coloum
+			for (int j = 0; j < c ; j++) {
 				System.out.print("*");
 				
+				
+//				c - 1  =  when  =  this will print last element as 
 				if(j!= c-1) {
 					System.out.print("-");
 				}				
