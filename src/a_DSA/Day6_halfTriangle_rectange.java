@@ -22,3 +22,8 @@ public class Day6_halfTriangle_rectange {
 		}
 	}
 }
+//    ****
+//   *****
+//  ******
+// *******
+//********

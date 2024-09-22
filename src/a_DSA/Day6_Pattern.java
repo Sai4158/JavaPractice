@@ -13,6 +13,7 @@ public class Day6_Pattern {
 			for (int j = 0; j < c; j++) {
 				System.out.print("*");
 				
+//				print when j not equal to c-1
 				if(j!= c-1) {
 					System.out.print("-");
 				}
