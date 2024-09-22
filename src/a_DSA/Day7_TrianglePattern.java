@@ -12,12 +12,18 @@ public class Day7_TrianglePattern {
 				System.out.print(" ");
 			}
 			
-//			for stars - add space for the alignment 
-			for (int j = 0; j < i; j++) {
-				System.out.print(" *");
+//			for stars - make sure to times 2 print on the left and the right 
+			for (int k = 0; k < 2*i; k++) {
+				System.out.print("*");
 			}
 			
 			System.out.println();
 		}
 	}
 }
+
+
+//	  *
+//   * *
+//  * * *
+// * * * *
