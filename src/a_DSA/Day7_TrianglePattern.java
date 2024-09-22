@@ -3,7 +3,7 @@ package a_DSA;
 public class Day7_TrianglePattern {
 	public static void main(String[] args) {
 		
-		int n =5;
+		int n =10;
 		
 		for (int i = 0; i < n; i++) {
 		
