@@ -9,22 +9,27 @@ public class Day7_HallowTrianglePattern {
 		
 		for (int i = 0; i < n; i++) {
 			
-//			Spaces
+//			Spaces 
 			for (int k = 0; k < n-i-1; k++) {
 				System.out.print(" ");
 
 			}
+			
+//			printing 
 			for (int j = 0; j <2*i+1; j++) {
 				
+//				print if 
 				if(i==n-1 || j==0 || j==2*i ) {
 				System.out.print("*");
 
+//				else leave space 
 				}else {
 					System.out.print(" ");
 
 				}
 
 			}
+//			New line  
 			System.out.println();
 		}
 	}
