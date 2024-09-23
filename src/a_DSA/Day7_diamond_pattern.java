@@ -6,7 +6,7 @@ public class Day7_diamond_pattern {
 		
 		int n = 5;
 		
-		
+//		Triangle 
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n-i; j++) {
 				System.out.print(" ");
@@ -17,6 +17,8 @@ public class Day7_diamond_pattern {
 			System.out.println();
 		}
 		
+		
+//		Upside down triangle
 		for (int i = n; i >=0; i--) {
 			for (int j = 0; j < n-i; j++) {
 				System.out.print(" ");
