@@ -17,6 +17,8 @@ public class Day7_TrianglePattern {
 				System.out.print("*");
 			}
 			
+			
+			
 			System.out.println();
 		}
 	}
