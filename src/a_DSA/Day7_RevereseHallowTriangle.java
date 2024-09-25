@@ -6,6 +6,7 @@ public class Day7_RevereseHallowTriangle {
 //      This is reversed triangle
 
         int n = 5;
+        
 
         for (int i = n; i > 0; i--) {
 
