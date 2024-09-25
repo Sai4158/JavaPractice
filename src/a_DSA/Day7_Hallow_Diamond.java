@@ -17,7 +17,7 @@ public class Day7_Hallow_Diamond {
 			for (int j = 1; j <= 2 * i - 1; j++) {
 
 				//	              Print '*' if on the first or last row or first/last column
-				if (i == n || j == 1 || j == 2 * i - 1) {
+				if (j == 1 || j == 2 * i - 1) {
 					System.out.print("*");
 				} else {
 					System.out.print(" ");
