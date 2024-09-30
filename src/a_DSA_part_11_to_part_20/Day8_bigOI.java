@@ -1,9 +1,9 @@
 package a_DSA_part_11_to_part_20;
 
-public class Day8_bigOn {
+public class Day8_bigOI {
 	public static void main(String[] args) {
 		
-//		This is big O of n
+//		This is big O of i
 		boolean ab = true;
 		
 		if(ab == true) {
