@@ -1,6 +1,6 @@
 package a_DSA_part_11_to_part_20;
 
-public class Day6_bigO_of_n2 {
+public class Day8_bigO_of_n2 {
 //	This is big o of n2
 	
 	public static void main(String[] args) {
