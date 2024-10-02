@@ -30,10 +30,15 @@ public class _977_Squares_of_a_Sorted_Array {
 //    Main method
     public static void main(String[] args) {
     	int a[] = {4,4,5,-6,4,88,23};
+    	int b[] = {6,6,3,6,8,32,2,4,7,4};
     		
 //    	Make sure to convert arrays to string here since we are using Arrays.sort
     	System.out.println(Arrays.toString(sortedSquares(a)));
 //    	[16, 16, 16, 25, 36, 529, 7744]
+    	
+    	System.out.println(Arrays.toString(sortedSquares(b)));
+//    	[4, 9, 16, 16, 36, 36, 36, 49, 64, 1024]
+
 
 	}
 }
