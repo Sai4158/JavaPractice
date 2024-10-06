@@ -26,6 +26,7 @@ public class Day9_inputInJava {
 			
 			System.out.println(a + " X " + i + " = " + b );
 		}
+		sc.close();
 		
 	}
 }
