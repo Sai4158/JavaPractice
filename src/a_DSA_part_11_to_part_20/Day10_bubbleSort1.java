@@ -7,6 +7,7 @@ int n[] = {5,4,54,34,24,6345,5};
 		
 		for (int i = 0; i < n.length-1; i++) {
 			for (int j = 0; j < n.length-1; j++) {
+				
 				if(n[j] > n[j+1]) {
 					int temp = n[j];
 					n[j] = n[j+1];

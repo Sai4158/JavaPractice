@@ -5,10 +5,10 @@ public class Day10_optimizedBubbleSort {
     public static void main(String[] args) {
 
         // Sorted
-         int n[] = {1, 2, 3, 4, 5, 6, 7};
+        // int n[] = {1, 2, 3, 4, 5, 6, 7};
 
         // Not Sorted
-//        int n[] = {4, 1, 7, 2, 5, 2};
+        int n[] = {4, 1, 7, 2, 5, 2};
 
         boolean isSorted = true;  
         // First, check if the array is already sorted
@@ -34,11 +34,15 @@ public class Day10_optimizedBubbleSort {
             // Bubble Sort to sort the array
             for (int i = 0; i < n.length - 1; i++) {
                 for (int j = 0; j < n.length - 1 - i; j++) {
-                    if (n[j] > n[j + 1]) {
+                	
+//                	change either here for descending or ascending 
+                    if (n[j] < n[j + 1]) {
                         int temp = n[j];
                         n[j] = n[j + 1];
                         n[j + 1] = temp;
                     }
+                    
+                    
                 }
             }
             System.out.println("Just sorted.");
