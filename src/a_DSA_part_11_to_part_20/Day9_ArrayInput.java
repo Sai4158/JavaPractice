@@ -10,7 +10,6 @@ public class Day9_ArrayInput {
 //		Scanner
 		Scanner sc = new Scanner(System.in);
 		
-		
 //		Ask the user 
 		System.out.print("Enter array of numbers ");
 		
@@ -21,8 +20,6 @@ public class Day9_ArrayInput {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}	
-		
-
 			
 //		Print
 		for (int i = 0; i < arr.length; i++) {
