@@ -11,7 +11,8 @@ public class Day10_ArryaSort {
 	
 		
 		
-		for (int i = 0; i < arr.length; i++) {
+		
+		for (int i = arr.length-1; i >= 0; i--) {
 			
 			System.out.println(arr[i]);
 		}
@@ -28,3 +29,14 @@ public class Day10_ArryaSort {
 //34
 //67
 //72
+
+//72
+//67
+//34
+//23
+//6
+//4
+//4
+//4
+//3
+
