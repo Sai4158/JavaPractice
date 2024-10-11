@@ -20,5 +20,11 @@ public class Day11_HashMap_int_string {
 		}
 		System.out.println(nav);
 
+		
+//		Print all the keys
+		System.out.println(nav.keySet());
+		
+//		print all the values
+		System.out.println(nav.values());
 	}
 }
