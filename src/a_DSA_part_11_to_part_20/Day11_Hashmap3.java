@@ -13,7 +13,7 @@ public class Day11_Hashmap3 {
 			
 			if(has.containsKey(n)) {
 				int prev = has.get(n);
-				has.put(n,prev+1);
+				has.put(n,prev+100);
 			}else {
 				has.put(n,1);
 			}
