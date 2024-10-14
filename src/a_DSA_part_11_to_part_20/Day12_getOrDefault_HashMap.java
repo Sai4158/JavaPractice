@@ -9,6 +9,7 @@ public class Day12_getOrDefault_HashMap {
 
 		String arr[] = {"hy","hu","hi","hi","hu", "hi","hi"};
 
+
 		
 		for (int i = 0; i < arr.length; i++) {
 			String key = arr[i];
@@ -17,6 +18,7 @@ public class Day12_getOrDefault_HashMap {
 		
 		for (String s : abc.keySet()) {
 			System.out.println(s + " " + abc.get(s));
+			System.out.println(abc.values());
 		}
 		
 		
