@@ -1,5 +1,7 @@
 package a_DSA_leetcode;
 
+import java.util.Arrays;
+
 public class _169_Majority_Element {
 	 public static int majorityElement(int[] nums) {
 	        int n = nums.length;
@@ -20,10 +22,24 @@ public class _169_Majority_Element {
 	        return -1;  
 	    }
 	 
+	 
+//	 or 
+	 
+	 public static int majorityElement1(int[] nums) {
+	        int n = nums.length/2;
+
+	        Arrays.sort(nums);
+
+	        int ans  = nums[n];
+
+	        return ans;
+	    }
+	 
 	 public static void main(String[] args) {
 		int a[] = {2,3,3};
 		
 		
 		System.out.println(majorityElement(a));
+		System.out.println(majorityElement1(a));
 	}
 }
