@@ -9,11 +9,9 @@ public class Day12_getOrDefault_HashMap {
 
 		String arr[] = {"hy","hu","hi","hi","hu", "hi","hi"};
 
-
 		
 		for (int i = 0; i < arr.length; i++) {
 			String key = arr[i];
-			
 			abc.put(key, abc.getOrDefault(key, 0)+1);
 		}
 		
