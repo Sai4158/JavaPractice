@@ -11,7 +11,12 @@ public class Day12_HashMap {
 		for (int i = 0; i < arr.length; i++) {
 			int n = arr[i];
 			
-			s1.put(n, 1);
+			if(s1.containsKey(n)) {
+				int prev = s1.get(n);
+				s1.put(n, prev + 1);
+			}else {
+				s1.put(n, 1);
+			}
 		}
 		
 		
