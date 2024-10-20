@@ -24,5 +24,19 @@ public class Day8_BIG_O {
 
 //	--------------------------
 	
+
+//	This is O(n^2)
+	public void printPairs(int[] arr) {
+	    for (int i = 0; i < arr.length; i++) {
+	        for (int j = 0; j < arr.length; j++) {
+	            System.out.println(arr[i] + ", " + arr[j]);
+	        }
+	    }
+	}
+
+
+//	--------------------------
+
+	
 	
 }
