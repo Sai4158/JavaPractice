@@ -23,5 +23,8 @@ public class Day12_getOrDefault {
 		for(Integer s : hash.keySet()) {
 			System.out.println(s + " " + hash.get(s));
 		}
+		
+
+				
 	}
 }
