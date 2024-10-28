@@ -5,15 +5,15 @@ public class Day14_While {
         
         int i = 0;
         
-        while(i < 10) {
-            System.out.println("Hello Sai");
+        while(i <= 10) {
+            System.out.println(i);
             
             // Increment `i` in each iteration
             if(i == 9) {
-                System.out.println(0);
+                System.out.println("Done");
             }
             
-            i += 1;
+            i++;
         }
         
         
