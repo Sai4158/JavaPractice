@@ -6,32 +6,33 @@ import java.util.HashSet;
 public class _645_Set_Mismatch {
 	public static int[] findErrorNums(int[] nums) {
 
-
-		HashSet<Integer> h1 = new HashSet<Integer>();
+		HashSet<Integer> hs = new HashSet<>();
 		
-		int r = -1;
-		
+		int dup = -1;
 		for (int i = 0; i < nums.length; i++) {
-			
-			if(!h1.contains(nums[i])) {
-				h1.add(nums[i]);
+			int current = nums[i];
+						
+			if(!hs.contains(current)) {
+				hs.add(current);
 			}else {
-				r = i;
+				dup = current;
 			}
 		}
 		
 		
-		int count = 0;
 		
-		for (int i = 1; i < nums.length+1; i++) {
-			 if(!h1.contains(i)) {
-				 count = i;
-				 break;
-			 }
+		int missing =-1;
+		for (int i = 1; i <= nums.length; i++) {
+			if(!hs.contains(i)) {
+				missing = i;
+			}
 		}
 		
-		return new int[] {r,count};
-
+		
+	
+		int ans[] = {dup,missing};		
+		
+		return ans;
 	}
 
 
