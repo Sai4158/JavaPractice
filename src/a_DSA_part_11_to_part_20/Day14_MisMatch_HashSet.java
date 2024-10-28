@@ -23,7 +23,7 @@ public class Day14_MisMatch_HashSet {
 		
 		
 		int missing =-1;
-		for (int i = 0; i < nums.length; i++) {
+		for (int i = 1; i <= nums.length; i++) {
 			if(!hs.contains(i)) {
 				missing = i;
 			}
