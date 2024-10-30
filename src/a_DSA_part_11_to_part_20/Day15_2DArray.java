@@ -12,6 +12,11 @@ public class Day15_2DArray {
 				System.out.println(arr[i][j]);
 			}
 		}
+		
+		
+//		This will only print first set
+		System.out.println(Arrays.toString(arr[0]));
+//		[1, 2, 3]
 	}
 }
 
