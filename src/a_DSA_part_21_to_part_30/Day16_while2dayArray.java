@@ -13,10 +13,16 @@ public class Day16_while2dayArray {
 		
 		boolean check = true;
 		
+		
+		
 		while(i<r  && i<c) {
 			System.out.println(arr[i][j]);
 			
-			if(arr[i][i]!=11) {
+			
+//			Will compare the first num to all
+			int temp =  arr[i][j];
+			
+			if(arr[i][i]!=temp) {
 				check = false;
 			}
 			 
