@@ -7,21 +7,25 @@ public class Day20TwoPointers {
 		int n =  arr.length;
 		int temp = 0;
 		int l = 0;
-		
+		int ans = 0;
 		
 		for (int r = 0; r < n; r++) {
 			
 			temp += arr[r];
 			
-			if(r - l ==0) {
+			if(r - l ==3) {
 				temp-= arr[l];
 				l++;
 			}
 			
 			
+			if(r-l+1 ==3) {
+				ans =  Math.max(ans, temp);
+			}
 			
-			System.out.println(temp);
+			
 		}
+		System.out.println(ans);
 
 	}
 }
