@@ -15,7 +15,7 @@ public class _1876_Substrings_of_Size_Three_with_Distinct_Characters {
 		 	char c = s.charAt(i+2);
 		 		
 		 	
-		 	if(a != b ||b!=c|| a!=c) {
+	        if(a!=b && b!=c && a!=c){
 		 		count++;
 		 		}
 			}
