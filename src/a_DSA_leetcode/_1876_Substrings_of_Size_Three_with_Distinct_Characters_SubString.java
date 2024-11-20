@@ -37,5 +37,8 @@ public class _1876_Substrings_of_Size_Three_with_Distinct_Characters_SubString {
 			}
 		}
     	
+    	System.out.println(h1);
+    	
+    	
     }
 }
