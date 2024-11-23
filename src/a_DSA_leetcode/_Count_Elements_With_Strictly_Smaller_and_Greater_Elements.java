@@ -14,6 +14,7 @@ public class _Count_Elements_With_Strictly_Smaller_and_Greater_Elements {
 			
 			for (int i = 0; i <n; i++) {
 				
+//				Check first and last element of sorted array to check if its greater and 
 				if(nums[i] > nums[0] && nums[i] < nums[n-1]) {
 					count++;
 				}
