@@ -15,18 +15,23 @@ public class Day26_MaxLengthSubarrayWithKOnes {
 
 		for (int i = 0; i < n; i++) {
 
+            // Increment the count of ones if the current element is 1
 			if(arr[i] == 1) {
 				temp ++;
 			}
 			
+			
+            // If the count of ones exceeds k, shrink the window from the left
 			while(temp> k) {
 				if(arr[l] ==1) {
 					temp--;
 				}
 				
+                // Move the left pointer forward to shrink the window
 				l++;
 			}
 			
+            // Update the maximum length of the subarray
 			ans = Math.max(ans, i-l-1);
 		}
 		
