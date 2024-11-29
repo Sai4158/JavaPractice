@@ -4,10 +4,10 @@ public class Day27_MaxOddSubarray {
 	public static void main(String[] args) {
 		
 		
-		int arr[] = {1,3,7,8,5,3,7,3,1};
+		int arr[] = {1,3,7,8,5,3,7,3,1,2,2,4,4};
 
 		int l = 0;
-		int k = 3;
+		int k = 1;
 		int temp = 0;
 		int ans = 0;
 		int n = arr.length;
@@ -16,12 +16,15 @@ public class Day27_MaxOddSubarray {
 		for (int r = 0; r < n; r++) {
 			
 			
-			if(arr[r] % 2 != 0) {
+			if(arr[r] % 2 == 1) {
 				temp++;
 			}
 			
-			while(arr[l] > k) {
-				temp -= arr[l];
+			while(temp > k) {
+				
+				if(arr[l] % 2 ==1) {
+					temp--;
+				}
 				
 				l++;
 			}
