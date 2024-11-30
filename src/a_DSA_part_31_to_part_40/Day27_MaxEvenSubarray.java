@@ -6,19 +6,19 @@ public class Day27_MaxEvenSubarray {
 		int arr[] = {1,2,2,2,1,1,1,1};
 
 		int l = 0;
-		int k = 1;
-		int temp = 0;
-		int ans = 0;
+		int k = 1; // Maximum allowed even numbers
+		int temp = 0; // Count of even numbers in the current window
+		int ans = 0; // Maximum length of the subarray
 		int n = arr.length;
 		
 		
 		for (int r = 0; r < n; r++) {
-			if(arr[r] % 2 != 0) {
+			if(arr[r] % 2 == 0) {
 				temp++;
 			}
 			
 			while(temp > k) {
-				if(arr[l] % 2 != 0) {
+				if(arr[l] % 2 == 0) {
 					temp--;
 				}
 				l++;
