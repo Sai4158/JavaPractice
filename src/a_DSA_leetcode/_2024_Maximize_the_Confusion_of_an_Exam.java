@@ -10,9 +10,7 @@ public class _2024_Maximize_the_Confusion_of_an_Exam {
 		 int  l = 0;
 		 
 		 for (int r = 0; r < n; r++) {
-			char ch = answerKey.charAt(r);
-			char chl = answerKey.charAt(l);
-			
+			char ch = answerKey.charAt(r);			
 			 if(ch == 'T') {
 				 countT++;
 				 
@@ -21,8 +19,8 @@ public class _2024_Maximize_the_Confusion_of_an_Exam {
 			 }
 			 
 			 
-			 while (Math.max(countf, countT)>k) {
-				 if(chl == 'T') {
+			 while (Math.min(countf, countT)>k) {
+				 if(answerKey.charAt(l) == 'T') {
 					 countT--;
 					 
 				 }else {
