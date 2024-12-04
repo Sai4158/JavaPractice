@@ -7,7 +7,7 @@ public class Day29_Without_Repeating_Characters {
 		
 		HashSet<Character> s1 = new HashSet<Character>();
 		
-		String s =  "abcabcbb";
+		String s =  "pwwkew";
 		
 		for (int i = 0; i < s.length(); i++) {
 			
