@@ -14,7 +14,7 @@ public class _3_Longest_Substring_Without_Repeating_Characters_ {
 		HashSet<Character> s1 =  new HashSet<Character>();
 		
 		
-		for (int r = 0; r < n-1; r++) {
+        for (int r = 0; r < n; r++) {
 			
 			char ch = s.charAt(r);
 			
@@ -30,7 +30,7 @@ public class _3_Longest_Substring_Without_Repeating_Characters_ {
 				s1.add(ch);
 				
 			}
-			ans =  Math.max(r-l+1, ans);
+            ans = Math.max(ans, r - l + 1);
 		}
 		
 		return ans;
