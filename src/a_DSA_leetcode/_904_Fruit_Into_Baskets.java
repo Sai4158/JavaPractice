@@ -20,8 +20,10 @@ public class _904_Fruit_Into_Baskets {
 		for (int r = 0; r < n; r++) {
 			
 			int val =  fruits[r];
+//			Add values with count
 			hm.put(val,hm.getOrDefault(val, 0)+1);
 			
+//			if hm size > 2 then remove lval
 			while(hm.size()>2) {
 				
 				int lval = fruits[l];
