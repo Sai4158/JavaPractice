@@ -17,9 +17,10 @@ public class Day30HashMapCount {
 		}
 		
 		
-		for(Character keys : hm.keySet()) {
-			System.out.println(hm.values() + " " + hm.get(keys));
-		}
+		for (Character key : hm.keySet()) {
+            System.out.println(key + " " + hm.get(key));
+        }
+
 	
 	}
 }
