@@ -18,5 +18,7 @@ public class Day30_ReturnStatments {
 		Day30_ReturnStatments ab = new Day30_ReturnStatments();
 		
 		System.out.println(ab.test());
+		System.out.println(ab.test());
+		System.out.println(ab.test());
 	}
 }
