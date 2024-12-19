@@ -6,10 +6,13 @@ public class _2520_Count_the_Digits_That_Divide_a_Number_ {
         int n = num; 
 
         for (int temp = n; temp > 0; temp /= 10) {
+        	
             int digit = temp % 10; 
+            
             if (digit != 0 && num % digit == 0) {
                 count++;
             }
+            
         }
 
         return count;
