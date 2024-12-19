@@ -28,15 +28,25 @@ public class Day30_CheckIfTheyAreAnagrams {
 		}
 		
 		
-		
-		
-		
-		
+//		Update hashmap
 		for (int r = 0; r < n; r++) {
-			
+			char ch = s.charAt(r);
+			hms.put(ch, hms.getOrDefault(ch, 0)+1);
 			
 			if(r-l==k) {
+				
+				char chl =  s.charAt(l);
+				hms.put(chl, hms.get(chl)-1);
+				
+				if(hms.get(chl)==0) {
+					hms.remove(chl);
+				}
+				
 				l++;
+			}
+			
+			if(r-l== k) {
+				System.out.println(hms);
 			}
 		}
 	};
@@ -50,5 +60,7 @@ public class Day30_CheckIfTheyAreAnagrams {
 		 String s = "abac";
 		 
 		 String p = "ab";
+		 
+		 System.out.println(findAnagrams(s,p));
 	}
 }
