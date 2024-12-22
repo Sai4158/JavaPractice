@@ -10,6 +10,7 @@ public class Day31_MaxOdd_KsubArrays {
         int ans = 0; 
         int k = 1;
 
+     // Traverse the array with right pointer
         for (int r = 0; r < arr.length; r++) {
             if (arr[r] % 2 == 1) {
                 temp++;
@@ -22,6 +23,7 @@ public class Day31_MaxOdd_KsubArrays {
                 l++;
             }
             
+         // Update maximum length
             ans = Math.max(ans, r - l + 1);
         }
 
