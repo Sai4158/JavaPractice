@@ -1,4 +1,4 @@
-package _2798;
+package a_DSA_leetcode;
 
 public class _2798_Number_of_Employees_Who_Met_the_Target {
 
