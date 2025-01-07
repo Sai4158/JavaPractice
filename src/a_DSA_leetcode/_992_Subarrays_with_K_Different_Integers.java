@@ -21,7 +21,7 @@ public class _992_Subarrays_with_K_Different_Integers {
 				l++;
 			}
 
-			ans +=  (r-l+1);
+			  ans+= r-l+1;;
 		}
 		return ans;
 	}
