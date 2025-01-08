@@ -17,14 +17,16 @@ public class _1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number {
     			if (nums[j] < nums[i]) {
                     count++;
                 }
-				
 			}
+    		
 			list.add(count);
 
     	}
 
     	
+//    	Converting array list to int list
     		int[] result = new int[n];
+    		
             for (int i = 0; i < n; i++) {
                 result[i] = list.get(i);
             }
