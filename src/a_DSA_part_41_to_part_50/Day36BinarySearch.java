@@ -13,7 +13,7 @@ public class Day36BinarySearch {
 			int mid =  (l+r)/2;
 			
 			if(arr[mid] == target) {
-				return arr[mid];
+				return mid;
 			}else if(arr[mid] > target) {
 				r = mid -1;
 			}else {
