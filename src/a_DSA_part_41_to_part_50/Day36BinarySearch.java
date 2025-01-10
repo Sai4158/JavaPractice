@@ -17,7 +17,7 @@ public class Day36BinarySearch {
 			}else if(arr[mid] > target) {
 				r = mid -1;
 			}else {
-				r = mid +1;
+				l = mid +1;
 			}
 		}
 		return -1;
