@@ -20,14 +20,14 @@ public class Day37BinarySearchPrac {
 			}
 		}
 		
-		return -1;
+		return l;
 	
 	}
 	
 	
 	public static void main(String[] args) {
 		int arr[] = {1,3,5,7,9};
-		int target =  2;
+		int target = 2;
 		
 		System.out.println(bs(arr, target));
 	}
