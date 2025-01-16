@@ -15,7 +15,7 @@ public static int bspromb(int arr[], int target) {
 					
 			result = mid;
 				
-			 r =  mid - 1;
+			 r =  mid + 1;
 			}else if(arr[mid]>target) {
 				 r = mid-1;
 			}else {
