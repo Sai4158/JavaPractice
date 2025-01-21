@@ -13,7 +13,6 @@ public class _278_First_Bad_Version {
     		
     		int mid = l + (r-l)/2;    	
     		
-//    		Test
     		if(isBadVersion(mid)) {
     			r = mid -1;
     		}else {
