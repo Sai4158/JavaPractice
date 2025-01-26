@@ -3,8 +3,8 @@ package a_DSA_part_41_to_part_50;
 public class Day40Rounding {
 	public static void main(String[] args) {
 		
-		int a = 5;
-		int b = 2;
+		int a = 7;
+		int b = 3;
 		
 		int c = a/b;
 		
