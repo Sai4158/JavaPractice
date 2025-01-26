@@ -6,7 +6,7 @@ public class _1283_Find_the_Smallest_Divisor_Given_a_Threshold {
 	public static int smallestDivisor(int[] nums, int threshold) {
 
 		int l = 1; 
-		int r = 10000;
+		int r = (int) Math.pow(10, 10);
 
 		while (l <= r) {
 			int mid = l + (r - l) / 2;
