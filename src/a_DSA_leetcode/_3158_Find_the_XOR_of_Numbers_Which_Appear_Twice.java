@@ -4,26 +4,25 @@ import java.util.HashMap;
 
 public class _3158_Find_the_XOR_of_Numbers_Which_Appear_Twice {
 	
-    public static int duplicateNumbersXOR(int[] nums) {
-        
-    	HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
-    	int ans =0;
-    	
-    	int n = nums.length;
-    	
-    	for (int i = 0; i < n; i++) {
-			
-    		hm.put(nums[i], hm.getOrDefault(nums[i], 0)+1);
+	public static String longestCommonPrefix(String[] strs) {
+		if (strs == null || strs.length == 0) return "";
+
+		String ans = "";
+
+		for (int i = 0; i < strs[0].length(); i++) { 
+			char c = strs[0].charAt(i); 
+
+			for (int j = 1; j < strs.length; j++) { 
+
+				if (i >= strs[j].length() || strs[j].charAt(i) != c) {
+					return ans;
+				}
+			}
+
+			ans += c; 
 		}
-    	
-    	for (int keys : hm.keySet()) {
-			
-    		if(hm.get(keys) == 2) {
-    			ans ^= keys;
-    		}
-		}
-    	return ans;
-    }
+		return ans;
+	}
 	
 	public static void main(String[] args) {
 		
