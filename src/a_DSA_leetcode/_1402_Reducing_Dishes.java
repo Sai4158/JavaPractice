@@ -1,14 +1,30 @@
 package a_DSA_leetcode;
 
+import java.util.Arrays;
+
 public class _1402_Reducing_Dishes {
 	
     public static int maxSatisfaction(int[] satisfaction) {
         
     	int n = satisfaction.length;
+    	int ans = 0;
+    	int sum = 0;
     	
-    	for (int i = 0; i < n; i++) {
-			
+    	Arrays.sort(satisfaction);
+    	
+    	for (int i = n-1; i >=0; i--) {
+		
+    		sum += satisfaction[i];
+    		
+    		if(sum + ans > ans ) {
+    			ans += sum;	
+    		}else {
+    			break;
+
+    		}
+    			
 		}
+    	return ans;
     	
     }
 	
