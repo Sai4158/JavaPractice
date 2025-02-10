@@ -14,7 +14,7 @@ public class _453_Minimum_Moves_to_Equal_Array_Elements {
     	
     	for (int i = 0; i < n; i++) {
 			
-    		count+=  nums[i] - min;
+    		count+=  nums[i] - nums[0];
     		
     		
 		}
