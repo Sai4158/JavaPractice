@@ -10,6 +10,7 @@ public class _374_Guess_Number_Higher_or_Lower {
     	while(l<=r) {
     		int mid = l+(r-l)/2;
     		
+//    		guess is calling guess function on leetcode problem 
     		int check = guess(mid);
     		
     		if(check == 0) {
