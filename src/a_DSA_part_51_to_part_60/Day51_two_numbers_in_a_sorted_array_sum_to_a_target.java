@@ -8,17 +8,23 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 public class Day51_two_numbers_in_a_sorted_array_sum_to_a_target {
 
 	
-	public static boolean findTwo(int nums[], int target) {
+	public static ArrayList<Integer> findTwo(int nums[], int target) {
 		
 		int l = 0;
 		int n = nums.length;
 		int r = n-1;
+		
+		ArrayList<Integer>al = new ArrayList<Integer>();
+
 		Arrays.sort(nums);
+		
 		
 		while(l<r) {
 			
 			if(nums[l] +  nums[r] ==  target) {
-				return true;
+				 al.add(nums[l]);
+				 al.add(nums[r]);
+				 return al;
 			} 
 			
 			else if(nums[l] + nums[r] > target) {
@@ -30,7 +36,7 @@ public class Day51_two_numbers_in_a_sorted_array_sum_to_a_target {
 			}
 			
 		}
-		return false;
+		return al;
 	}
 	
 	public static void main(String[] args) {
