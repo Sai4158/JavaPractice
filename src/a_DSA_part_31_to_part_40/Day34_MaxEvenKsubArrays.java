@@ -25,7 +25,7 @@ public class Day34_MaxEvenKsubArrays {
 			while(temp>k) {
 				
 				if(arr[l] % 2 != 1) {
-					temp--;
+					temp-=arr[l];
 				}
 				l++;
 			}
