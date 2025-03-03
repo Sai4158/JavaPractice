@@ -14,8 +14,8 @@ public class _2160_Minimum_Sum_of_Four_Digit_Number_After_Splitting_Digits {
 
          Arrays.sort(digits);
 
-         int num1 = digits[0] ^ 10 + digits[1]; 
-         int num2 = digits[2] % 10 + digits[3];
+         int num1 = digits[0] * 10 + digits[2];
+         int num2 = digits[1] * 10 + digits[3];
 
          return num1 + num2;
      }
