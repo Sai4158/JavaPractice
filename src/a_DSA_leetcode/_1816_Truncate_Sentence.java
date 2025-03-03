@@ -14,7 +14,7 @@ public class _1816_Truncate_Sentence {
 		for (int i = 0; i < k; i++) {
 			al.add(word[i]);
 		}
-		return al.toString();
+		return String.join(" ", al);
 	}
 
 	public static void main(String[] args) {
