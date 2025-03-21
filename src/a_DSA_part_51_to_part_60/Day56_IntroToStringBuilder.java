@@ -21,5 +21,6 @@ public class Day56_IntroToStringBuilder {
 		
 		System.out.println(nameb);
 		
+		System.out.println(nameb.length());
 	}
 }	
