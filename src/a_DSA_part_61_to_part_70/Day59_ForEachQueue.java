@@ -17,5 +17,10 @@ public class Day59_ForEachQueue {
 		for(String s :  q) {
 			System.out.println(s);
 		}
+		
+//		remove until queue is empty 
+		while(!q.isEmpty()) {
+			System.out.println(q.poll());
+		}
 	}
 }
