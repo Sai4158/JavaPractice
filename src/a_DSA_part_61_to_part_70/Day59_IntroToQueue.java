@@ -20,6 +20,16 @@ public class Day59_IntroToQueue {
 		
 		System.out.println(q);
 
+//		Rules
+//		Only can add from last 
+//		only can remove form the front 
+		
+		
+//		both time complexity is  o of n 
+//		poll - will remove front only 
+		
+		
+//		Just like real life queue 
 		
 	}
 }
