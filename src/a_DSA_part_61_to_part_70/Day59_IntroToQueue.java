@@ -20,6 +20,10 @@ public class Day59_IntroToQueue {
 		
 		System.out.println(q);
 
+		
+//		Shows the first element
+		System.out.println(q.peek());
+		
 //		Rules
 //		Only can add from last 
 //		only can remove form the front 
