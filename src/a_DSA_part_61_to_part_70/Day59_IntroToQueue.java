@@ -5,6 +5,8 @@ import java.util.Queue;
 
 public class Day59_IntroToQueue {
 	
+//	Queue is FIFO =  first in first out
+	
 	public static void main(String[] args) {
 	
 		
