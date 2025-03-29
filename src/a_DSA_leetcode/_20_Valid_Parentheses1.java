@@ -27,7 +27,7 @@ public class _20_Valid_Parentheses1 {
 				if(c == ')' && TopPop != '(' ||
 						c == ']' && TopPop != '[' ||
 						c == '}' && TopPop != '{' ) {
-					
+
 					return false;
 
 				}
@@ -35,8 +35,8 @@ public class _20_Valid_Parentheses1 {
 			}
 
 		}
-		
-//		if it works -  the stack should be empty
+
+		//		if it works -  the stack should be empty
 		return st.isEmpty();
 
 	}
@@ -44,7 +44,7 @@ public class _20_Valid_Parentheses1 {
 	public static void main(String[] args) {
 		String s = "()[]{}";
 		System.out.println(isValid(s));
-		
+
 		String s1 = "()[]{}(([])";
 		System.out.println(isValid(s1));
 	}
