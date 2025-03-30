@@ -1,4 +1,4 @@
-package a_DSA_part_61_to_part_70;
+package a_DSA_leetcode;
 
 public class _1848_Minimum_Distance_to_the_Target_Element {
 
