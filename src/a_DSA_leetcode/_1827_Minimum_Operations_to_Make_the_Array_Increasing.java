@@ -8,7 +8,7 @@ public class _1827_Minimum_Operations_to_Make_the_Array_Increasing {
     	
     	for (int i = 0; i < nums.length-1; i++) {
 			
-    		if(nums[i] > nums[i+1]) {
+    		if(nums[i] >= nums[i+1]) {
     			
                 int diff = nums[i] - nums[i + 1] + 1;
     			
