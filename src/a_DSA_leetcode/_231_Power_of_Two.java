@@ -7,10 +7,11 @@ public class _231_Power_of_Two {
     	int ans = n;
     	
     	
-    	for (int i = 0; i < n; i++) {
+    	for (int i = 0; i < 31; i++) {
 			
     		int power = i;
     		
+//    		This is the math power use this and not the "^"
     		if (Math.pow(2, power) == ans) {
     			return true;
     		}
