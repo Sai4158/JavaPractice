@@ -15,5 +15,13 @@ public class Day63_IntroDeque {
 		dq.addFirst(2);
 		
 		System.out.println(dq);
+		
+		
+//		Remove the last element
+		dq.pollLast();
+		
+		System.out.println(dq);
+
+		
 	}
 }
