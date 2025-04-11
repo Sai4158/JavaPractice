@@ -55,6 +55,7 @@ public class _2032_Two_Out_of_Three {
         return ans;
     }
 
+//	This is the main method
 	public static void main(String[] args) {
 		int[] nums1 = {1, 1, 3, 2};
 		int[] nums2 = {2, 3};
