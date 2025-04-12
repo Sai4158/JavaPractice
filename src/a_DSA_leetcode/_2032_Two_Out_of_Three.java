@@ -9,8 +9,10 @@ public class _2032_Two_Out_of_Three {
 
 	public static List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
 
+//		Hashmap to combine them
 		HashMap<Integer, Integer> hm =  new HashMap<Integer, Integer>();
 
+//		HashSet to store all the arrays
 		HashSet<Integer> hs1 = new HashSet<Integer>();
 		HashSet<Integer> hs2 = new HashSet<Integer>();
 		HashSet<Integer> hs3 = new HashSet<Integer>();
