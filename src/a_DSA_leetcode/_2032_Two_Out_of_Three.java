@@ -17,7 +17,7 @@ public class _2032_Two_Out_of_Three {
 		HashSet<Integer> hs2 = new HashSet<Integer>();
 		HashSet<Integer> hs3 = new HashSet<Integer>();
 
-		//    	Added the values into the set
+//		Added the values into the set
         for (int val : nums1) {
             hs1.add(val);
         }
