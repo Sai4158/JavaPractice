@@ -8,6 +8,7 @@ public class _1880_Check_if_Word_Equals_Summation_of_Two_Words {
     	int sum2 = 0;
     	int sum3 = 0;
     	
+//    	for loops to fill all the values in it
     	for (int i = 0; i < firstWord.length(); i++) {
     		sum1 = sum1 * 10 + (firstWord.charAt(i) - 'a');
     	}
