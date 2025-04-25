@@ -12,6 +12,8 @@ public class Day66_Priorityqueue {
 		pq.add(3);
 		pq.add(10);
 		
+		pq.remove();
+		
 		System.out.println(pq.peek());
 		
 	}
