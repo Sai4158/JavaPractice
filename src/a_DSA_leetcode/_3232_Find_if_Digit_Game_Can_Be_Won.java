@@ -21,10 +21,10 @@ public class _3232_Find_if_Digit_Game_Can_Be_Won {
     	int total = singleCount + doubleCount;
     	
     	
-    	if(singleCount > total - singleCount) {
+    	if(singleCount > doubleCount) {
     		return true;
     	}
-    	if(doubleCount > total - doubleCount) {
+    	if(doubleCount > singleCount) {
     		return true;
     	}
     	
