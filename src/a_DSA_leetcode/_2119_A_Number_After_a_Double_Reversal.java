@@ -9,6 +9,7 @@ public class _2119_A_Number_After_a_Double_Reversal {
     		return true;
     	}
     	
+//    	Check if zero is in the last 
     	if(num % 10 == 0) {
     		return false;
     	}else {
