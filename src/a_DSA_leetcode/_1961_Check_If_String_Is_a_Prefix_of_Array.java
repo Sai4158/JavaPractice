@@ -2,24 +2,27 @@ package a_DSA_leetcode;
 
 public class _1961_Check_If_String_Is_a_Prefix_of_Array {
 
-	public static boolean isPrefixString(String s, String[] words) {
+	 public static boolean isPrefixString(String s, String[] words) {
 
-		int n = words.length;
-		StringBuilder sb = new StringBuilder();
+	        StringBuilder sb = new StringBuilder();
 
-		for (int i = 0; i < n; i++) {
-			sb.append(words[i]);
+//	        only run until words
+	        for (int i = 0; i < words.length; i++) {
+	            sb.append(words[i]);
 
+//	            if this is not equal return false 
+	            if (!s.startsWith(sb.toString())) {
+	                return false;
+	            }
 
-			if(s.startsWith(sb.toString())) {
-				return true;
-			}
+//	            only return true if all equal to s 
+	            if (sb.toString().equals(s)) {
+	                return true;
+	            }
+	        }
 
-
-		}
-
-		return false;
-	}
+	        return false; 
+	    }
 
 	public static void main(String[] args) {
 		String s = "iloveleetcode";
