@@ -1,33 +1,44 @@
 package a_DSA_leetcode;
 
+import java.util.HashMap;
+
 public class _3541_Find_Most_Frequent_Vowel_and_Consonant {
 
 	public static int maxFreqSum(String s) {
-		int[] freq = new int[26];
-		int maxVowel = 0, maxConsonant = 0;
 
-		for (int i = 0; i < s.length(); i++) {
-			char ch = s.charAt(i);
-			freq[ch - 'a']++;
-		}
+		int n =  s.length();
+		HashMap<Character, Integer>  hm1 = new HashMap<Character, Integer>();
+		HashMap<Character, Integer>  hm2 = new HashMap<Character, Integer>();
 
-		for (int i = 0; i < 26; i++) {
+		for (int i = 0; i < n; i++) {
 			
-			char ch = (char) (i + 'a');
+			char ch =  s.charAt(i);
 			
-			
-			
-			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-				maxVowel = Math.max(maxVowel, freq[i]);
-			} else {
-				maxConsonant = Math.max(maxConsonant, freq[i]);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+				
+            	hm1.put(ch, hm1.getOrDefault(ch, 0)+1);
+      
+			}else {
+            	hm2.put(ch, hm2.getOrDefault(ch, 0)+1);
 			}
+			
 		}
-
-		return maxVowel + maxConsonant;
+		
+		int count1 = 0;
+		for(int c : hm1.values()) {
+			count1 = Math.max(c, count1);
+		}
+		
+		int count2 = 0;
+		for(int c : hm2.values()) {
+			count2 = Math.max(c, count2);
+		}
+		
+		
+		return count1 +  count2;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(mostFrequentVowelConsonant("successes")); 
+		System.out.println(maxFreqSum("successes")); 
 	}
 }
