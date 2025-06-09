@@ -5,7 +5,7 @@ public class Day70_CountSysmentricNums {
         
     	int count = 0;
     	
-    	for (int i = low; i < high; i++) {
+    	for (int i = low; i <= high; i++) {
 			
     		String a = i + "";
     		int n =  a.length();
