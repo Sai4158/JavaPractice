@@ -1,32 +1,31 @@
 package a_DSA_leetcode;
 
+import java.util.Stack;
+
+
 public class _456_132_Pattern {
 
 	public static boolean find132pattern(int[] nums) {
 
 		int n =  nums.length;
-		boolean ans = false;
-
-		for (int i = 0; i < n-2; i++) {
-
-			for (int j = i+1; j < n-1; j++) {
-				
-				if(nums[i] >= nums[j]) {
-					continue;
-				}
-				
-				for (int k = i+2; k < n; k++) {
-
-
-					if (nums[i] < nums[k] && nums[k] < nums[j]) {
-						return true;
-					}
-
-				}
-
+		int third =  Integer.MIN_VALUE;
+		Stack<Integer> stack = new Stack<Integer>();
+		
+	    for (int i = n - 1; i >= 0; i--) {
+			
+			if(nums[i] < third) {
+				return true;
 			}
-
+			
+			
+			while(!stack.isEmpty() && nums[i] > stack.peek()) {
+				third = stack.pop();
+			}
+			
+			stack.push(nums[i]);
+			
 		}
+		
 		return false;
 
 	}
