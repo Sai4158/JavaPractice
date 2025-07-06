@@ -6,37 +6,25 @@ import java.util.concurrent.CountDownLatch;
 public class _1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing {
 
 
-	public static boolean canBeIncreasing(int[] nums) {
+    public static boolean canBeIncreasing(int[] nums) {
+        int count = 0;
+        int n = nums.length;
 
-		int n = nums.length;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] <= nums[i - 1]) {
+                count++;
+                if (count > 1) return false;
 
+                if (i > 1 && nums[i] <= nums[i - 2]) {
+                    if (i + 1 < n && nums[i + 1] <= nums[i - 1]) {
+                        return false;
+                    }
+                }
+            }
+        }
 
-		for (int i = 0; i < n-1; i++) {
-
-			int prev =  -1;
-			boolean isValid =  true;
-
-			for (int j = 0; j < n; j++) {
-
-				if(j == i) {
-					continue;
-				}
-
-				if (nums[j] <= prev) {
-					isValid = false;
-					break;
-				}
-				prev = nums[j];
-
-
-			}
-			
-			if(isValid)return true;
-
-		}
-
-		return false;
-	}
+        return true;
+    }
 
 
 	public static void main(String[] args) {
