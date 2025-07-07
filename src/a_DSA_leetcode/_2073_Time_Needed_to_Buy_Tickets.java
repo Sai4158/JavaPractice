@@ -23,5 +23,6 @@ public class _2073_Time_Needed_to_Buy_Tickets {
 	
 	public static void main(String[] args) {
 		 System.out.println(timeRequiredToBuy(new int[]{2, 3, 2}, 2));
+		 System.out.println(timeRequiredToBuy(new int[]{5, 6, 9}, 7));
 	}
 }
