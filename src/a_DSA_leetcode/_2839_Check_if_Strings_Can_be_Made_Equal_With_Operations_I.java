@@ -17,7 +17,7 @@ public class _2839_Check_if_Strings_Can_be_Made_Equal_With_Operations_I {
     	Arrays.sort(odd1);
     	Arrays.sort(odd2);
     	
-    	return Arrays.equals(even1, even1) && Arrays.equals(odd1, odd2);
+    	return Arrays.equals(even1, even2) && Arrays.equals(odd1, odd2);
     	
     }
 	
