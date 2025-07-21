@@ -2,6 +2,7 @@ package a_DSA_leetcode;
 
 public class _693_Binary_Number_with_Alternating_Bits {
 
+
 	public static boolean hasAlternatingBits(int n) {
 
 		
@@ -19,6 +20,7 @@ public class _693_Binary_Number_with_Alternating_Bits {
 		return true;
 	}
 
+//	Main method 
 	public static void main(String[] args) {
 
 		int  n = 5;
