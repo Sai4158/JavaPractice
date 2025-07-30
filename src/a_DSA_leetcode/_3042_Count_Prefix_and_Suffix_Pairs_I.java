@@ -7,11 +7,14 @@ public class _3042_Count_Prefix_and_Suffix_Pairs_I {
     	int n = words.length;
     	int count = 0;
     	
-    	for (int i = 0; i < words.length; i++) {
+    	for (int i = 0; i < n -  1; i++) {
 			
-    		for (int j = i+1; j < words.length; j++) {
+    		for (int j = i + 1; j < n; j++) {
 				
-    			if(words[j].startsWith(words[i]) && words[i].endsWith(words[i])) {
+    			String a = words[i];
+    			String b = words[j];
+    			
+    			if(b.startsWith(a) && b.endsWith(a)) {
     				count++;
     			}
     			
