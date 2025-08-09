@@ -5,7 +5,7 @@ public class _2063_Vowels_of_All_Substrings {
     public static long countVowels(String word) {
         
     	int n = word.length();
-    	int count = 0;
+    	long count = 0;
     	
     	
     	for (int i = 0; i < n; i++) {
