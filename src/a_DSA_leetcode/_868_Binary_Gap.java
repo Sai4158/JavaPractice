@@ -6,7 +6,6 @@ public class _868_Binary_Gap {
 				
 		String  bit =  Integer.toBinaryString(n);
 		
-//		Test
 		int last = -1;
 		int max = 0;
 		
