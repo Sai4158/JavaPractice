@@ -5,19 +5,19 @@ public class _1523_Count_Odd_Numbers_in_an_Interval_Range {
 
     public static int countOdds(int low, int high) {
         
-    	int count = 0;
-    	
-    	for (int i = low; i <= high; i++) {
-			
-    		if(i % 2 != 0) {
-    			count++;
-    		}
-    		
-		}
-    	
-    	return count;
+    	int n =  oddsup(high) - oddsup(low - 1);
+		
+    	return n;
     	
     }
+    
+    private static int oddsup(int n) {
+    	
+    	if(n < 0)return 0;
+    	
+    	return (n+1)/2;
+    	
+	}
     
     
     public static void main(String[] args) {
