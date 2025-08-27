@@ -6,10 +6,11 @@ public class _2605_Form_Smallest_Number_From_Two_Digit_Arrays {
 
 	public static int minNumber(int[] nums1, int[] nums2) {
 
+//		Sort first
 		Arrays.sort(nums1);
 		Arrays.sort(nums2);
 
-
+//		find if both numbers are same? if so return one of them
 		for (int i = 0; i < nums1.length; i++) {
             for (int j = 0; j < nums2.length; j++) {
                 if (nums1[i] == nums2[j]) {
@@ -18,10 +19,12 @@ public class _2605_Form_Smallest_Number_From_Two_Digit_Arrays {
             }
         }
 
+//		Store nums1 and nums2 first sorted digit 
 		int a  =  nums1[0];
 		int b  =  nums2[0];
 
 
+//		Return the smallest pair
 		if(a < b) {
 			return Integer.parseInt(Integer.toString(a) + Integer.toString(b));
 
@@ -32,6 +35,7 @@ public class _2605_Form_Smallest_Number_From_Two_Digit_Arrays {
 
 	}
 
+//	Main method
 	public static void main(String[] args) {
 		int nums1[] = {4,1,3}, nums2[] = {5,7};
 		System.out.println(minNumber(nums1, nums2));
