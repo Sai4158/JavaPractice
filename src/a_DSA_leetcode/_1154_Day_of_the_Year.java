@@ -6,10 +6,10 @@ public class _1154_Day_of_the_Year {
 	
     public static int dayOfYear(String date) {
         
-    	int n = date.length();
-
+//    Put the date into the local date
     	LocalDate d =  LocalDate.parse(date);
     	
+//    	then count the days
     	return d.getDayOfYear();
     	
     }
