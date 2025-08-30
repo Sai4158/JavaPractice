@@ -25,6 +25,7 @@ public class _1646_Get_Maximum_in_Generated_Array {
 		return count;
 	}
 
+//	Test
 	public static void main(String[] args) {
 		System.out.println(getMaximumGenerated(7));
 	}
