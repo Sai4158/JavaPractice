@@ -3,12 +3,15 @@ package a_DSA_leetcode;
 public class _1646_Get_Maximum_in_Generated_Array {
 
 	public static int getMaximumGenerated(int n) {
+		
+//		if n is 0 or 1 return them
 		if (n == 0) return 0;
 		if (n == 1) return 1;
 
 		int[] nums = new int[n + 1];
 		int count = 1; 
 
+//		for loop and +  1
 		for (int i = 0; i < n + 1; i++) {
 			if (i == 0) {
 				nums[0] = 0;
@@ -22,10 +25,11 @@ public class _1646_Get_Maximum_in_Generated_Array {
 			if (i >= 1) count = Math.max(count, nums[i]); 
 		}
 
+//		Return the count
 		return count;
 	}
 
-//	Test
+// Main
 	public static void main(String[] args) {
 		System.out.println(getMaximumGenerated(7));
 	}
