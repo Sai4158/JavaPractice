@@ -18,7 +18,7 @@ public class _2578_Split_With_Minimum_Sum {
 			
     		int d =  digits[i] - '0';
     		
-    		if(digits[i] % 2 == 0) {
+    		if(i % 2 == 0) {
     			num1 =  num1 * 10 + d;
     		}
     		else{
