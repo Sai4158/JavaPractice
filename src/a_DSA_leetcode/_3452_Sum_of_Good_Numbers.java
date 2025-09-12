@@ -5,7 +5,7 @@ public class _3452_Sum_of_Good_Numbers {
     public static int sumOfGoodNumbers(int[] nums, int k) {
         
     	int n = nums.length;
-    	
+//    	count
     	int count = 0 ;
     	
     	for (int i = 0; i < n; i++) {
