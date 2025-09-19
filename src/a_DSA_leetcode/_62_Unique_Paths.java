@@ -3,7 +3,8 @@ package a_DSA_leetcode;
 public class _62_Unique_Paths {
 
     public static int uniquePaths(int m, int n) {
-        
+
+//    	Use double array
     	int [][] dp = new int[m][n];
     	
     	for (int i = 0; i < m; i++) {
@@ -20,10 +21,12 @@ public class _62_Unique_Paths {
     		
 		}
     	
+//    	Return the last 
         return dp[m - 1][n - 1];
     	
     }
     
+    // Main
     public static void main(String[] args) {
 		int m = 3, n = 2;
 		System.out.println(uniquePaths(m, n));
