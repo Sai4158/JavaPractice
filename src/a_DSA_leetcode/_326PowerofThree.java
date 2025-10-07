@@ -2,6 +2,7 @@ package a_DSA_leetcode;
 
 public class _326PowerofThree {
 
+//	IsPowerOfThree method
     public static boolean isPowerOfThree(int n) {
         
 
@@ -27,6 +28,7 @@ public class _326PowerofThree {
     	return false;
     }
     
+//    Main
     public static void main(String[] args) {
 		int  n = 27;
 		
