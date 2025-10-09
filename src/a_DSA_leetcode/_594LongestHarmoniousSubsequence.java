@@ -34,6 +34,12 @@ public class _594LongestHarmoniousSubsequence {
     	int  nums[] = {1,3,2,2,5,2,3,7};
     	System.out.println(findLHS(nums));
     	
+    	int  nums1[] = {1,2,3,4};
+    	System.out.println(findLHS(nums1));
+    	
+    	int  nums2[] = {1,1,1,1};
+    	System.out.println(findLHS(nums2));
+    	
 	}
     
 }
