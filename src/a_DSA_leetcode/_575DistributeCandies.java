@@ -8,12 +8,15 @@ public class _575DistributeCandies {
         
     	int n =  candyType.length;
     	
+//    	Hashset
     	HashSet<Integer> hs = new HashSet<Integer>();
     	
+//    	Add all the candy types to the hashset
     	for (int i = 0; i < n; i++) {
     		hs.add(candyType[i]);
 		}
     	
+//    	return which ever is smaller if the size of the hashset or the array lenght
     	return Math.min(hs.size(), n/2);
     	
     	
