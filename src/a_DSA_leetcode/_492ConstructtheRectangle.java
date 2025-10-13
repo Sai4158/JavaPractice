@@ -14,6 +14,7 @@ public class _492ConstructtheRectangle {
     	}
     	
 //    	and the length is the = area/width
+//    	and the length is the = area/width
     	int len = area / wid;
     	
     	
