@@ -22,6 +22,7 @@ public class _3683EarliestTimetoFinishOneTask {
     }
 	
 	public static void main(String[] args) {
-		
+		int tasks[][] = {{1,6},{2,3}};
+		System.out.println(earliestTime(tasks));
 	}
 }
