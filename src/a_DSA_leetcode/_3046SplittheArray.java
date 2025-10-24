@@ -28,6 +28,7 @@ public class _3046SplittheArray {
     }
 	
 	public static void main(String[] args) {
-		
+		int nums [] =  {1,1,2,2,3,4};
+		System.out.println(isPossibleToSplit(nums));
 	}
 }
