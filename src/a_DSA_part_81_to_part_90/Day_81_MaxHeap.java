@@ -16,6 +16,12 @@ public class Day_81_MaxHeap {
 		q.add(3);
 		
 		
+//		ceil =  top
+//		floor =  bottom
+		
+		Math.floor(3.3);
+		Math.ceil(3.4);
+		
 		System.out.println(q);
 	}
 }
