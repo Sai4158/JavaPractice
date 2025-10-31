@@ -23,6 +23,11 @@ public class _2980CheckifBitwiseORHasTrailingZeros {
     public static void main(String[] args) {
 		int nums[] = {1,2,3,4,5};
 		System.out.println(hasTrailingZeros(nums));
+		
+		int nums1[] = {2,4,8,16};
+		System.out.println(hasTrailingZeros(nums1));
+		
+		
 	}
 	
 }
