@@ -37,7 +37,4 @@ public class _2558_Take_Gifts_From_the_Richest_Pile {
 		return ans;
     }
 	
-	public static void main(String[] args) {
-		
-	}
 }
