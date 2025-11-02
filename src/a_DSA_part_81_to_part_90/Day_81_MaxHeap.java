@@ -14,14 +14,16 @@ public class Day_81_MaxHeap {
 		q.add(4);
 		q.add(8);
 		q.add(3);
-		
+		System.out.println(q);
 		
 //		ceil =  top
 //		floor =  bottom
-		
-		Math.floor(3.3);
-		Math.ceil(3.4);
-		
-		System.out.println(q);
+
+		double a  = 5.3;
+	
+		System.out.println(Math.floor(a));
+		System.out.println(Math.ceil(a));
 	}
+	
+	
 }
