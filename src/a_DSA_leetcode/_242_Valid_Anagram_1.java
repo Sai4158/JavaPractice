@@ -30,6 +30,9 @@ public class _242_Valid_Anagram_1 {
 		
     	String s = "anagram", t = "nagaram";
     	System.out.println(isAnagram(s, t));
+    	
+    	String s1 = "anagram", t2 = "nagaram";
+    	System.out.println(isAnagram(s1, t2));
 	}
 	
 }
