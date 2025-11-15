@@ -4,7 +4,8 @@ public class _3136_Valid_Word {
 
     public static boolean isValid(String word) {
         
-    	int n  = word.length();
+        int n = word.length();
+        if (n < 3) return false; 
 
         boolean hasVowel = false;
         boolean hasConsonant = false;
