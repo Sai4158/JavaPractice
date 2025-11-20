@@ -39,6 +39,10 @@ public class _3438_Find_Valid_Pair_of_Adjacent_Digits_in_String {
 	public static void main(String[] args) {
 		String s = "2523533";
 		System.out.println(findValidPair(s));
+		
+		
+		String s1 = "2523533";
+		System.out.println(findValidPair(s1));
 	}
 
 }
