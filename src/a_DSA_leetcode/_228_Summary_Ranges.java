@@ -56,5 +56,11 @@ public class _228_Summary_Ranges {
 		int []nums = {0,1,2,4,5,7};
 
 		System.out.println(summaryRanges(nums));
+		
+		
+		int []nums1 = {0,2,3,4,6,8,9};
+
+		System.out.println(summaryRanges(nums1));
+		
 	}
 }
