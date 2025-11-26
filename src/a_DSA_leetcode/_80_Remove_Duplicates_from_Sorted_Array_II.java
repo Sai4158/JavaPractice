@@ -59,5 +59,9 @@ public class _80_Remove_Duplicates_from_Sorted_Array_II {
 		
 		int nums1[] = {0,0,1,1,1,1,2,3,3};
 		System.out.println(removeDuplicates1(nums1));
+		
+		
+		int nums2[] = {0,0,1,1,1,1,0,0,1,1,1,1};
+		System.out.println(removeDuplicates1(nums2));
 	}
 }
