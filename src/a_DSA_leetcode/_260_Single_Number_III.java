@@ -33,10 +33,33 @@ public class _260_Single_Number_III {
         return ans;
     }
     
+    public static int[] singleNumber1(int[] nums) {
+        int xor = 0;
+        for (int n : nums) {
+            xor ^= n;   
+        }
+
+        int diff = xor & -xor;   
+        int a = 0, b = 0;
+
+        for (int n : nums) {
+            if ((n & diff) == 0) {
+                a ^= n;  
+            } else {
+                b ^= n;  
+            }
+        }
+
+        return new int[]{a, b};
+    }
+    
     public static void main(String[] args) {
 		
     	int nums[] = {1,2,1,3,2,5};
     	System.out.println(singleNumber(nums));
+    	
+    	int nums1[] = {1,2,1,3,2,5};
+    	System.out.println(singleNumber1(nums1));
     	
 	}
 	
