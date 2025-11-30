@@ -26,6 +26,9 @@ public class _575DistributeCandies {
 		
     	int candyType[] = {1,1,2,2,3,3};
     	System.out.println(distributeCandies(candyType));
+    	
+    	int candyType1[] = {3,5,6,7,26,8,9};
+    	System.out.println(distributeCandies(candyType1));
 	}
 	
 }
