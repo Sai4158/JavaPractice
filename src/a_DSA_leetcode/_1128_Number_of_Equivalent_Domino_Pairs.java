@@ -46,5 +46,9 @@ public class _1128_Number_of_Equivalent_Domino_Pairs {
 		int[][] dominoes1 = {{1,4},{4,1},{3,4},{1,4}};
 		System.out.println(numEquivDominoPairs1(dominoes1));
 		
+		
+		int[][] dominoes13 = {{1,4},{1,4},{3,4},{3,4},{1,4},{1,4},{1,4},{4,1},{3,4},{1,4}};
+		System.out.println(numEquivDominoPairs1(dominoes13));
+		
 	}
 }
