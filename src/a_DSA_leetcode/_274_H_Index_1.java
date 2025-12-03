@@ -10,9 +10,10 @@ public class _274_H_Index_1 {
         
     	int n = citations.length;
     	
+//    	O(N LOG N)
     	Arrays.sort(citations);
     	
-    	
+//    	0(N)
     	for (int i = 0; i < n; i++) {
 			
     		int count =  n - i;
