@@ -32,6 +32,8 @@ public class _274_H_Index_1 {
 		
     	int citations[] = {3,0,6,1,5};
     	System.out.println(hIndex(citations));
-    	
+    	    	
+    	int citations1[] = {1,3,1};
+    	System.out.println(hIndex(citations1));
 	}
 }
