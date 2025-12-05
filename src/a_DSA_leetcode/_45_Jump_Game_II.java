@@ -37,6 +37,10 @@ public class _45_Jump_Game_II {
     	
     	System.out.println(jump(nums));
     	
+    	int nums1[] = {4,4,7,9,2,4,7,89};
+    	
+    	System.out.println(jump(nums1));
+    	
 	}
 	
 }
