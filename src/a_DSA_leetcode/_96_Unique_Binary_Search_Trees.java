@@ -20,4 +20,11 @@ public class _96_Unique_Binary_Search_Trees {
 
     return dp[n];
     }
+    
+    public static void main(String[] args) {
+		
+    	int n =  3; 
+    	
+    	System.out.println(numTrees(n));
+	}
 }
