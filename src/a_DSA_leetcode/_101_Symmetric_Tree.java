@@ -18,7 +18,7 @@ public class _101_Symmetric_Tree {
     		 return false;
     	 }
     	 
-    	  if(a.val != a.val) {
+    	  if(a.val != b.val) {
     		  return false;
     	  }
     	 
