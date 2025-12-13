@@ -10,9 +10,29 @@ public class _110_Balanced_Binary_Tree {
     }
     
 
-     private static int checkHeight(TreeNode root) {
-		// TODO Auto-generated method stub
-		return 0;
+     private static int checkHeight(TreeNode node) {
+	
+    	 if(node ==  null) {
+    		 return 0;
+    	 }
+    	 
+    	 int leftheight =  checkHeight(node.left);
+    	 if(leftheight == -1) {
+    		 return  -1;
+    	 }
+    	 
+    	 int rightheight = checkHeight(node.right);
+    	 if(rightheight == -1) {
+    		 return -1;
+    	 }
+    	 
+    	 
+    	 if(Math.abs(leftheight -  rightheight)>1) {
+    		 return  -1;
+    	 };
+    	 
+    	 
+		return 1 + Math.max(leftheight, rightheight);
 	}
 
 
