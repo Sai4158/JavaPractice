@@ -31,7 +31,7 @@ public class _112_Path_Sum {
     	int newTarget = targetSum -  root.val;
     	
     	
-    	return hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum);
+    	return hasPathSum(root.left, newTarget) || hasPathSum(root.right, newTarget);
     	
     }
     
