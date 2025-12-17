@@ -30,6 +30,23 @@ public class _104_Maximum_Depth_of_Binary_Tree_1 {
 		return 1 + Math.max(leftDep, RightDep);
     }
 	
-	
+	 public static void main(String[] args) {
+
+		 TreeNode root1 = new TreeNode(3);
+	        root1.left = new TreeNode(9);
+	        root1.right = new TreeNode(20);
+	        root1.right.left = new TreeNode(15);
+	        root1.right.right = new TreeNode(7);
+
+	        System.out.println("Max depth of tree 1: " + maxDepth(root1)); 
+
+	        TreeNode root2 = new TreeNode(1);
+	        root2.right = new TreeNode(2);
+
+	        System.out.println("Max depth of tree 2: " + maxDepth(root2)); 
+
+	        TreeNode root3 = null;
+	        System.out.println("Max depth of empty tree: " + maxDepth(root3)); 
+	    }
 
 }
