@@ -17,17 +17,19 @@ public class _104_Maximum_Depth_of_Binary_Tree_1 {
 	      }
 	  }
 	
-	public static int maxDepth(TreeNode root) {
-	       
-		if(root == null) {
-			return 0;
-		}
-		
-		int leftDep =  maxDepth(root.left);
-		int RightDep =  maxDepth(root.right);
-		
-		
-		return 1 + Math.max(leftDep, RightDep);
+    public static int maxDepth(TreeNode root) {
+        
+//    	If tree is null, return 0
+    	if(root == null) {
+    		return 0;
+    	}
+    	
+        // Get depth for each left and right tree
+    	int leftDepth =  maxDepth(root.left);
+    	int RightDepth =  maxDepth(root.right);
+    	
+//    	return 1+ (current level) + which ever is max
+    	return  1 + Math.max(leftDepth, RightDepth);
     }
 	
 	 public static void main(String[] args) {
