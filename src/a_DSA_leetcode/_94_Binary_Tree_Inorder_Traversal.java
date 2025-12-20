@@ -45,8 +45,5 @@ public class _94_Binary_Tree_Inorder_Traversal {
     	          this.right = right;
     	      }
     	  }
-    
-    public static void main(String[] args) {
-		
-	}
+
 }
