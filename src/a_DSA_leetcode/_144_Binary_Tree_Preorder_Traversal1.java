@@ -28,16 +28,16 @@ public class _144_Binary_Tree_Preorder_Traversal1 {
 	    return ans;
 	    }
 
-		private void preorder(TreeNode root, List<Integer> ans) {
+	    private void preorder(TreeNode root, List<Integer> ans) {
+	        if (root == null) {
+	            return;
+	        }
 
-			if(root ==  null) {
-				return;
-			}
-			
-			ans.add(root.val);
-			
-			preorder(root.left, ans);
-			
-			preorder(root.right, ans);
-		}
+	        // Node
+	        ans.add(root.val);
+	        // Left
+	        preorder(root.left, ans);
+	        // Right
+	        preorder(root.right, ans);
+	    }
 }
