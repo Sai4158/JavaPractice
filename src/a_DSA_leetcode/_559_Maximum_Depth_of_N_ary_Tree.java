@@ -24,7 +24,8 @@ public class _559_Maximum_Depth_of_N_ary_Tree {
 	
     public static int maxDepth(Node root) {
         
-    	
+        // Empty tree
+
     	if(root == null) {
     		return 0;
     	}
@@ -32,6 +33,8 @@ public class _559_Maximum_Depth_of_N_ary_Tree {
     	
     	int max = 0;
     	
+        // Check the depth of each child
+
     	for(Node child:root.children) {
     		int childDepth = maxDepth(child);
     		
@@ -40,7 +43,8 @@ public class _559_Maximum_Depth_of_N_ary_Tree {
     		}
     	}
     	
-    	
+        // Depth of this node = 1 (itself) + max depth among children
+
     	return  1 + max;
     }
 	
