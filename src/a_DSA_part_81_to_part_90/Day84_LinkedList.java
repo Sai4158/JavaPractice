@@ -18,7 +18,7 @@ public class Day84_LinkedList {
 	public static void main(String[] args) {
 		
 		Node node1 =  new Node("a");
-		Node node2 =  new Node("a");
+		Node node2 =  new Node("b");
 		
 		node1.next =  node2;
 	
