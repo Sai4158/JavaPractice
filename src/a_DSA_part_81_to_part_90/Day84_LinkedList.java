@@ -38,9 +38,14 @@ public class Day84_LinkedList {
         
         while(temp != null) {
         	
-        	System.out.println(temp.data);
-        	
+        	System.out.print(temp.data);
+                	
         	temp =  temp.next;
+
+        	if(temp != null) {
+        		System.out.print(" -> ");
+        	}
+        	
         }
 	}
 	
