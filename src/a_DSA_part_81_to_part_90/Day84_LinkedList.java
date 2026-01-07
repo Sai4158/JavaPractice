@@ -32,6 +32,16 @@ public class Day84_LinkedList {
         node2.next =  node3;
         
         System.out.println(node2.next.data);
+        
+        Node head = node1;
+        Node temp =  head;
+        
+        while(temp != null) {
+        	
+        	System.out.println(temp.data);
+        	
+        	temp =  temp.next;
+        }
 	}
 	
 	
