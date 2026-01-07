@@ -1,7 +1,5 @@
 package a_DSA_part_81_to_part_90;
 
-import java.lang.classfile.components.ClassPrinter.Node;
-
 public class Day84_LinkedList {
 
 	
@@ -14,6 +12,7 @@ public class Day84_LinkedList {
             this.next = null;
         }
     }
+
 	
 	public static void main(String[] args) {
 		
@@ -25,5 +24,15 @@ public class Day84_LinkedList {
 		
         System.out.println("node1.data = " + node1.data);
         System.out.println("node1.next.data = " + node1.next.data);
+        
+        
+        Node node3 =  new Node("c");
+        Node node4 =  new Node("d");
+        
+        node2.next =  node3;
+        
+        System.out.println(node2.next.data);
 	}
+	
+	
 }
