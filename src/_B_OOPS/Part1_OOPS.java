@@ -10,6 +10,8 @@ public class Part1_OOPS {
         ToyStore branch1 = new ToyStore(name1, price1);
 
 		System.out.println(branch1);
+		
+		branch1.fun();
 
 	}
 }
@@ -22,6 +24,11 @@ public class Part1_OOPS {
 
 			name =  this.name;
 			price  =  this.price;
+		}
+		
+		
+		public void fun() {
+			System.out.println("Im a function");
 		}
 
 	}
