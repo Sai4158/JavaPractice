@@ -7,8 +7,11 @@ public class Part2_Constructor {
 
 		chai branch1 =  new chai("School",2,5);
 		chai branch2 =  new chai("Maimi", 2,45);
+		chai branch3 =  new chai("FL", 2,45);
 		branch1.display();
 		branch2.display();
+		branch3.display();
+		branch3.display();
 	}
 
 
