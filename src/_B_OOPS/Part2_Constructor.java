@@ -32,7 +32,9 @@ public class Part2_Constructor {
 		
 		public void display() {
 			System.out.println(branchName);
+			System.out.println();
 			System.out.println(cupsSold);
+			System.out.println();
 			System.out.println(pricePerCup);
 		}
 		
