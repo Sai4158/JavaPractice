@@ -7,7 +7,6 @@ public class Part3_OOPS {
 		
 		chaiShop Branch1 =  new chaiShop("Apple",2,6);
 		Branch1.display();
-		Branch1.revenue();
 		
 	}
 }
@@ -26,7 +25,7 @@ class chaiShop{
 	}
 
 	public void display() {
-
+		revenue();
 	}
 
 	public void classfun() {
@@ -36,6 +35,10 @@ class chaiShop{
 	public void revenue() {
 		
 		System.out.println("Revenue = " + (cupsSold * pricePerCup));
+	}
+	
+	public void Chaii() {
+		cupsSold += 1;
 	}
 
 }
