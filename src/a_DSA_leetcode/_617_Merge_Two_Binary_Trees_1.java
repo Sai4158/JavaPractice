@@ -35,6 +35,27 @@ public class _617_Merge_Two_Binary_Trees_1 {
 		return root1;
 	}
 
+	
+	public static void main(String[] args) {
+        _617_Merge_Two_Binary_Trees_1 outer = new _617_Merge_Two_Binary_Trees_1();
+
+		
+		TreeNode root1 = outer.new TreeNode(1);
+	        root1.left = outer.new TreeNode(3);
+	        root1.right = outer.new TreeNode(2);
+	        root1.left.left = outer.new TreeNode(5);
+
+	        // root2 = [2,1,3,null,4,null,7]
+	        TreeNode root2 = outer.new TreeNode(2);
+	        root2.left = outer.new TreeNode(1);
+	        root2.right = outer.new TreeNode(3);
+	        root2.left.right = outer.new TreeNode(4);
+	        root2.right.right = outer.new TreeNode(7);
+
+	        TreeNode merged = mergeTrees(root1, root2);		
+		
+		
+	}
 
 
 
