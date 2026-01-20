@@ -41,6 +41,26 @@ public class _2331_Evaluate_Boolean_Binary_Tree {
 		}
 		
 	}
+	
+	
+	public static void main(String[] args) {
+        _2331_Evaluate_Boolean_Binary_Tree obj = new _2331_Evaluate_Boolean_Binary_Tree();
+
+        //[2,1,3,null,null,0,1]
+        //      2 (OR)
+        //     / \
+        //    1   3 (AND)
+        //       / \
+        //      0   1
+        TreeNode root = obj.new TreeNode(2);
+        root.left = obj.new TreeNode(1);
+        root.right = obj.new TreeNode(3);
+        root.right.left = obj.new TreeNode(0);
+        root.right.right = obj.new TreeNode(1);
+
+        boolean result = obj.evaluateTree(root);
+        System.out.println("Result: " + result);
+    }
 
 
 }
