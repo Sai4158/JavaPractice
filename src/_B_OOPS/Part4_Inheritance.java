@@ -18,6 +18,18 @@ package _B_OOPS;
 			System.out.println("Profit = " + (paperSold * pricePerPaper));
 		}
 		
+		public void fun() {
+			System.out.println("fun 1");
+		}
+		
+		public void fun(int a) {
+			System.out.println("fun 2");
+		}
+		
+		public void fun(int a, int b) {
+			System.out.println("fun 3");
+		}
+		
 	}
 	
 	public class Part4_Inheritance {
@@ -27,6 +39,10 @@ package _B_OOPS;
 		xerox1 branch1 = new xerox1("PA", 3,5);
 		
 		branch1.Dispaly();
+		
+		branch1.fun();
+		branch1.fun(2);
+		branch1.fun(3,4);
 	}
 	
 }
