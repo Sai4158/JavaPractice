@@ -29,12 +29,14 @@ package _B_OOPS;
 		public void fun(int a, int b) {
 			System.out.println("fun 3");
 		}
+	
 		
 	}
 	
 	public class Part4_Inheritance {
 
-	
+		
+		
 	public static void main(String[] args) {
 		xerox1 branch1 = new xerox1("PA", 3,5);
 		
@@ -43,6 +45,8 @@ package _B_OOPS;
 		branch1.fun();
 		branch1.fun(2);
 		branch1.fun(3,4);
+	
+		
 	}
 	
 }
