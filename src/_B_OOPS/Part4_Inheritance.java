@@ -29,6 +29,11 @@ package _B_OOPS;
 		public void fun(int a, int b) {
 			System.out.println("fun 3");
 		}
+		
+		public void fun(boolean a, int b) {
+			System.out.println("Answer: " + (a ? "true" : "false"));
+		}
+		
 	
 		
 	}
@@ -45,6 +50,8 @@ package _B_OOPS;
 		branch1.fun();
 		branch1.fun(2);
 		branch1.fun(3,4);
+		branch1.fun(false,4);
+
 	
 		
 	}
