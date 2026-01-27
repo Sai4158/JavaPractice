@@ -30,7 +30,9 @@ public class Lenght {
 		
 		String s = "AB";
 		System.out.println(Lenghtt(s));
-				
+			
+		String s1 = "ABABABA";
+		System.out.println(s1);
 		
 	}
 }
