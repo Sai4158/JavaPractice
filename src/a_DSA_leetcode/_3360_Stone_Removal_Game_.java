@@ -4,19 +4,31 @@ public class _3360_Stone_Removal_Game_ {
 
     public static boolean canAliceWin(int n) {
         
+//    	Set to 10
     	int alice = 10;
+    	
+//    	When its the turn set it to true
     	boolean aliceTurn =  true;
     	
+//    	if alice10 is greater than 0 do the loop
     	while(alice>0) {
-    		if(n >  alice) {
-    			return aliceTurn =  false;
+    		
+//    		if n < alice10 then return false
+    		if(n < alice) {
+    			return !aliceTurn; 
     		}
     		
+//    		-10 every time
     		n -= alice;
+    		
+//    		-1 for bob
     		alice--;
-    		aliceTurn = false;
+    		
+//    		Check if this is alice turn
+            aliceTurn = !aliceTurn;
     	}
     	
+//    	return false 
     	return false;
     		
     }
