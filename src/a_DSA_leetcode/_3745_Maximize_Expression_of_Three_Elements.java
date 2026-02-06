@@ -8,16 +8,23 @@ public class _3745_Maximize_Expression_of_Three_Elements {
         
     	int n =  nums.length;
     	
+        // sort the array in increasing order
     	Arrays.sort(nums);
     	
-    	int a = nums[n-1];
-    	int b = nums[n-2];
-    	int c =  nums[0];
-    	
-    	int ans = a + b - c;
-    	
-    	return ans;
-    	
+    	// choose the largest number as a
+        int a = nums[n - 1];
+
+        // choose the second largest number as b
+        int b = nums[n - 2];
+
+        // choose the smallest number as c (because we subtract c)
+        int c = nums[0];
+
+        // maximize a + b - c
+        int ans = a + b - c;
+
+        // return the maximum value
+        return ans;
     }
     
     

@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 public class _383_Ransom_Note_1 {
     
-	
     public static boolean canConstruct(String ransomNote, String magazine) {
 
         HashMap<Character, Integer> map = new HashMap<>();
