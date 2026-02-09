@@ -50,4 +50,21 @@ public class _232_Implement_Queue_using_Stacks {
             }
         }
     }
+    
+    public static void main(String[] args) {
+
+        _232_Implement_Queue_using_Stacks outer = new _232_Implement_Queue_using_Stacks();
+        MyQueue q = outer.new MyQueue();   
+
+        q.push(1);
+        q.push(2);
+
+        System.out.println(q.peek());   
+        System.out.println(q.pop());    
+        System.out.println(q.empty());  
+
+        System.out.println(q.pop());    
+        System.out.println(q.empty());  
+    }
+
 }
