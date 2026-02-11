@@ -6,28 +6,19 @@ public class _3114_Latest_Time_You_Can_Obtain_After_Replacing_Characters {
 
         char[] ans = s.toCharArray();
 
-        if (ans[0] == '?') {
-            if (ans[1] != '?' && ans[1] > '1') {
-                ans[0] = '0';
-            } else {
-                ans[0] = '1';
-            }
-        }
+        // pick best hour tens (0 or 1)
+        if (ans[0] == '?') ans[0] = (ans[1] != '?' && ans[1] > '1') ? '0' : '1';
 
-        if (ans[1] == '?') {
-            if (ans[0] == '1') ans[1] = '1';
-            else ans[1] = '9';
-        }
+        // pick best hour ones (depends on hour tens)
+        if (ans[1] == '?') ans[1] = (ans[0] == '1') ? '1' : '9';
 
-        if (ans[3] == '?') {
-            ans[3] = '5';
-        }
+        // pick best minute tens (max 5)
+        if (ans[3] == '?') ans[3] = '5';
 
-        if (ans[4] == '?') {
-            ans[4] = '9';
-        }
+        // pick best minute ones (max 9)
+        if (ans[4] == '?') ans[4] = '9';
 
-        return new String(ans);
+        return new String(ans); 
     }
 
     public static void main(String[] args) {
