@@ -1,38 +1,30 @@
 package a_DSA_leetcode;
 
-import java.util.HashMap;
-
 public class _925_Long_Pressed_Name {
-	
+
     public static boolean isLongPressedName(String name, String typed) {
-       
-		int l = 0;
-		int r = 0;
-		
-		while(r<typed.length()) {
-			
-			if(l < name.length() && name.charAt(l) == typed.charAt(r)) {
-				l++;
-				r++;
-			}
-			
-        else if (r > 0 && typed.charAt(r) == typed.charAt(r - 1)) {
-        	r++;
+
+        int i = 0; 
+
+        for (int j = 0; j < typed.length(); j++) { 
+
+            // if current typed matches next needed char in name
+            if (i < name.length() && typed.charAt(j) == name.charAt(i)) {
+                i++;
+            }
+            // else it must be a repeat of previous typed character (long press)
+            else if (j > 0 && typed.charAt(j) == typed.charAt(j - 1)) {
+            }
+            else {
+                return false;
+            }
         }
-			
-			else {
-				return false;
-			}
-			
-		}
-		
-		return l == name.length();
+
+        return i == name.length();
     }
-    
-    
+
     public static void main(String[] args) {
-		String name = "alex", typed = "aaleex";
-		System.out.println(isLongPressedName(name, typed));
-	}
-	
+        String name = "alex", typed = "aaleex";
+        System.out.println(isLongPressedName(name, typed)); // true
+    }
 }
