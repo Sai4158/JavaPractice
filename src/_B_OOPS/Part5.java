@@ -1,30 +1,34 @@
 package _B_OOPS;
 
-
- class owner{
-	String name =  "Sai";
+class Owner {
+    String name = "Sai";
 }
 
- class room extends Shop{
-	
-	 int roomNo = 3;
-	 int noOfChairs = 2;
+interface SupplierName {
+    String supplierName = "Sai";
 }
- 
- interface supplierName{
-	 String supplierName = "Sai";
-	  
- }
- 
- class Shop implements supplierName{
-	 
+
+class Shop extends Owner implements SupplierName {
+}
+
+class Room extends Shop {
+    int roomNo = 3;
+    int noOfChairs = 2;
 }
 
 public class Part5 {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		room r = new room();
-		System.out.println(r.noOfChairs);
-	}
-	
+        Room r = new Room();
+
+        // print room info
+        System.out.println(r.roomNo);
+        System.out.println(r.noOfChairs);
+
+        // print owner name (from Owner class)
+        System.out.println(r.name);
+
+        // print supplier name (from interface)
+        System.out.println(r.supplierName);
+    }
 }
