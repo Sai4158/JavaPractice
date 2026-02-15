@@ -5,7 +5,9 @@ class Owner {
 }
 
 interface SupplierName {
-    String supplierName = "Sai";
+    String supplierName = "UPP";
+    String supplierName1 = "xcss";
+    String supplierName2 = "MCS";
 }
 
 class Shop extends Owner implements SupplierName {
@@ -29,6 +31,8 @@ public class Part5 {
         System.out.println(r.name);
 
         // print supplier name (from interface)
+        System.out.println(r.supplierName1);
+        System.out.println(r.supplierName2);
         System.out.println(r.supplierName);
     }
 }
