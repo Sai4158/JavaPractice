@@ -18,23 +18,18 @@ public class _700_Search_in_a_Binary_Search_Tree {
 
 	public TreeNode searchBST(TreeNode root, int val) {
 
-		TreeNode current =  root;
+		TreeNode cur =  root;
 
-		while(current != null) {
+		 while (cur != null) {
 
-			if(current.val ==  val) {
-				return current;
-			}
-
-			else if (val < current.val) {
-				current =  current.left;
-			}
-
-			else {
-				current =  current.right;
-			}
-
-		}
+	            if (cur.val == val) {
+	                return cur;           // found node -> return subtree
+	            } else if (val < cur.val) {
+	                cur = cur.left;       // go left
+	            } else {
+	                cur = cur.right;      // go right
+	            }
+	        }
 		return null;
 
 	}
