@@ -29,14 +29,20 @@ public class _94_Binary_Tree_Inorder_Traversal_1 {
 	}
 
 	private void inorder(TreeNode root, List<Integer> ans) {
-		
-		if(root == null) {
-			return;
-		}
-		
-		inorder(root.left, ans);
-		ans.add(root.val);
-		inorder(root.right, ans);
-		
+
+	    // base case: if the node is null, stop
+	    if (root == null) {
+	        return;
+	    }
+
+	    // 1) visit left subtree
+	    inorder(root.left, ans);
+
+	    // 2) visit current node (add its value)
+	    ans.add(root.val);
+
+	    // 3) visit right subtree
+	    inorder(root.right, ans);
 	}
+
 }
