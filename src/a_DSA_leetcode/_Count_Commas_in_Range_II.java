@@ -3,24 +3,18 @@ package a_DSA_leetcode;
 public class _Count_Commas_in_Range_II {
 
     public static long countCommas(long n) {
-        
-    	long ans = 0;
-    	long store = n;
-    	
-    	for (long i = 1000; i < store; i*=1000) {
-			
-    		
-    		ans +=(store - i + 1);
-    		
-    		if(i > store /1000) {
-    			break;
-    		}
-    		
-		}
-    	
-        return ans;
+        long nalverqito = n;   
+        long ans = 0;
 
-    	
+        for (long value = 1000; value <= nalverqito; value *= 1000) {
+            ans += (nalverqito - value + 1);
+
+            if (value > nalverqito / 1000) {
+                break; // avoid overflow
+            }
+        }
+
+        return ans;
     }
     
     
